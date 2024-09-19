@@ -1,0 +1,274 @@
+Assembly Accession	Assembly Name	Organism Name	Organism Infraspecific Names Breed	Organism Infraspecific Names Strain	Organism Infraspecific Names Cultivar	Organism Infraspecific Names Ecotype	Organism Infraspecific Names Isolate	Organism Infraspecific Names Sex	Annotation Name	Assembly Level	Assembly Release Date	WGS project accession	Assembly Stats Number of Scaffolds	Annotation BUSCO Complete 	Annotation BUSCO Single Copy 	Annotation BUSCO Duplicated 	Annotation BUSCO Fragmented 	Annotation BUSCO Missing 	Annotation BUSCO Lineage 	Assembly Sequencing Tech	Assembly BioSample Accession	CheckM completeness	CheckM contamination
+GCA_000961215.1	ASM96121v1	Xanthomonas citri pv. citri		MN12					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911843	99.2	0.37
+GCF_000961215.1	ASM96121v1	Xanthomonas citri pv. citri		MN12					GCF_000961215.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911843	99.2	0.37
+GCA_021474205.1	ASM2147420v1	Xanthomonas citri pv. glycines		ICMP5732					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-01-15		3							Illumina; NanoPore	SAMN22870845	99.27	2.22
+GCF_021474205.1	ASM2147420v1	Xanthomonas citri pv. glycines		ICMP5732					GCF_021474205.1-RS_2024_05_12	Complete Genome	2022-01-15		3							Illumina; NanoPore	SAMN22870845	99.27	2.22
+GCA_000723725.2	ASM72372v2	Xanthomonas citri pv. viticola		LMG 965					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2023-11-29		2							Oxford Nanopore MinION; Illumina MiSeq	SAMEA3139044	99.48	
+GCF_000723725.2	ASM72372v2	Xanthomonas citri pv. viticola		LMG 965					GCF_000723725.2-RS_2024_05_12	Complete Genome	2023-11-29		2							Oxford Nanopore MinION; Illumina MiSeq	SAMEA3139044	99.48	
+GCA_002218265.1	ASM221826v1	Xanthomonas citri pv. vignicola		CFBP7112					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-07-13		3							PacBio	SAMN07252091	99.06	0.59
+GCF_002218265.1	ASM221826v1	Xanthomonas citri pv. vignicola		CFBP7112					GCF_002218265.1-RS_2024_05_05	Complete Genome	2017-07-13		3							PacBio	SAMN07252091	99.06	0.59
+GCA_002139955.1	ASM213995v1	Xanthomonas citri pv. citri		TX160149					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-05-15		4							PacBio RSII	SAMN06685654	98.88	0.54
+GCF_002139955.1	ASM213995v1	Xanthomonas citri pv. citri		TX160149					GCF_002139955.1-RS_2024_05_05	Complete Genome	2017-05-15		4							PacBio RSII	SAMN06685654	98.88	0.54
+GCA_002139995.1	ASM213999v1	Xanthomonas citri pv. citri		TX160197					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-05-15		3							PacBio RSII	SAMN06685696	99.13	0.42
+GCF_002139995.1	ASM213999v1	Xanthomonas citri pv. citri		TX160197					GCF_002139995.1-RS_2024_05_05	Complete Genome	2017-05-15		3							PacBio RSII	SAMN06685696	99.13	0.42
+GCA_002139975.1	ASM213997v1	Xanthomonas citri pv. citri		TX160042					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-05-15		3							PacBio RSH	SAMN06685652	99.13	0.42
+GCF_002139975.1	ASM213997v1	Xanthomonas citri pv. citri		TX160042					GCF_002139975.1-RS_2024_05_05	Complete Genome	2017-05-15		3							PacBio RSH	SAMN06685652	99.13	0.42
+GCA_000961435.1	ASM96143v1	Xanthomonas citri pv. citri		AW13					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911848	98.45	0.5
+GCF_000961435.1	ASM96143v1	Xanthomonas citri pv. citri		AW13					GCF_000961435.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911848	98.45	0.5
+GCA_000961455.1	ASM96145v1	Xanthomonas citri pv. citri		AW14					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911849	98.45	0.5
+GCF_000961455.1	ASM96145v1	Xanthomonas citri pv. citri		AW14					GCF_000961455.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911849	98.45	0.5
+GCA_000961475.1	ASM96147v1	Xanthomonas citri pv. citri		AW15					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911850	98.45	0.5
+GCF_000961475.1	ASM96147v1	Xanthomonas citri pv. citri		AW15					GCF_000961475.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911850	98.45	0.5
+GCA_000961495.1	ASM96149v1	Xanthomonas citri pv. citri		AW16					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911851	98.45	0.5
+GCF_000961495.1	ASM96149v1	Xanthomonas citri pv. citri		AW16					GCF_000961495.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911851	98.45	0.5
+GCA_016801615.1	ASM1680161v1	Xanthomonas citri pv. citri		DAR84832					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-02-02		5							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15814998	98.56	0.5
+GCF_016801615.1	ASM1680161v1	Xanthomonas citri pv. citri		DAR84832					GCF_016801615.1-RS_2024_05_06	Complete Genome	2021-02-02		5							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15814998	98.56	0.5
+GCA_016801655.1	ASM1680165v1	Xanthomonas citri pv. citri		DAR73889					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-02-02		6							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815000	99	1.59
+GCF_016801655.1	ASM1680165v1	Xanthomonas citri pv. citri		DAR73889					GCF_016801655.1-RS_2024_05_06	Complete Genome	2021-02-02		6							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815000	99	1.59
+GCA_016801635.1	ASM1680163v1	Xanthomonas citri pv. citri		DAR73886					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-02-02		5							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15814999	98.56	0.5
+GCF_016801635.1	ASM1680163v1	Xanthomonas citri pv. citri		DAR73886					GCF_016801635.1-RS_2024_05_06	Complete Genome	2021-02-02		5							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15814999	98.56	0.5
+GCA_019076985.1	ASM1907698v1	Xanthomonas citri pv. citri		GD82					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-06-30		5							Illumina HiSeq	SAMN19021834	99.23	1.55
+GCF_019076985.1	ASM1907698v1	Xanthomonas citri pv. citri		GD82					GCF_019076985.1-RS_2024_05_06	Complete Genome	2021-06-30		5							Illumina HiSeq	SAMN19021834	99.23	1.55
+GCA_019434335.1	ASM1943433v1	Xanthomonas citri pv. citri		SN3-3					Annotation submitted by Academia Sinica	Complete Genome	2021-08-02		2							Oxford Nanopore;Illumina	SAMN15461541	98.84	0.5
+GCF_019434335.1	ASM1943433v1	Xanthomonas citri pv. citri		SN3-3					GCF_019434335.1-RS_2024_05_06	Complete Genome	2021-08-02		2							Oxford Nanopore;Illumina	SAMN15461541	98.84	0.5
+GCA_016801675.1	ASM1680167v1	Xanthomonas citri pv. citri		DAR72029					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-02-02		7							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815001	98.38	1.59
+GCF_016801675.1	ASM1680167v1	Xanthomonas citri pv. citri		DAR72029					GCF_016801675.1-RS_2024_05_06	Complete Genome	2021-02-02		7							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815001	98.38	1.59
+GCA_016801695.1	ASM1680169v1	Xanthomonas citri pv. citri		DAR73909					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-02-02		7							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815002	97.2	1.59
+GCF_016801695.1	ASM1680169v1	Xanthomonas citri pv. citri		DAR73909					GCF_016801695.1-RS_2024_05_06	Complete Genome	2021-02-02		7							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815002	97.2	1.59
+GCA_000961195.1	ASM96119v1	Xanthomonas citri pv. citri		NT17					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911844	98.86	0.37
+GCF_000961195.1	ASM96119v1	Xanthomonas citri pv. citri		NT17					GCF_000961195.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911844	98.86	0.37
+GCA_000961415.1	ASM96141v1	Xanthomonas citri pv. citri		5208					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911840	98.86	0.37
+GCF_000961415.1	ASM96141v1	Xanthomonas citri pv. citri		5208					GCF_000961415.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911840	98.86	0.37
+GCA_000961275.1	ASM96127v1	Xanthomonas citri pv. citri		mf20					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911847	98.86	0.37
+GCF_000961275.1	ASM96127v1	Xanthomonas citri pv. citri		MF20					GCF_000961275.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911847	98.86	0.37
+GCA_000961395.1	ASM96139v1	Xanthomonas citri pv. citri		BL18					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911845	98.86	0.37
+GCF_000961395.1	ASM96139v1	Xanthomonas citri pv. citri		BL18					GCF_000961395.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911845	98.86	0.37
+GCA_000961375.1	ASM96137v1	Xanthomonas citri pv. citri		FB19					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911846	98.86	0.37
+GCF_000961375.1	ASM96137v1	Xanthomonas citri pv. citri		FB19					GCF_000961375.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911846	98.86	0.37
+GCA_001922065.1	ASM192206v1	Xanthomonas citri pv. citri		LH276					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-12-27		4							PacBio	SAMN05823145	98.88	1.51
+GCF_001922065.1	ASM192206v1	Xanthomonas citri pv. citri		LH276					GCF_001922065.1-RS_2024_05_05	Complete Genome	2016-12-27		4							PacBio	SAMN05823145	98.88	1.51
+GCA_001922045.1	ASM192204v1	Xanthomonas citri pv. citri		LL074-4					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-12-27		3							PacBio	SAMN05823143	99.04	1.43
+GCF_001922045.1	ASM192204v1	Xanthomonas citri pv. citri		LL074-4					GCF_001922045.1-RS_2024_05_05	Complete Genome	2016-12-27		3							PacBio	SAMN05823143	99.04	1.43
+GCA_001922105.1	ASM192210v1	Xanthomonas citri pv. citri		LH201					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-12-27		3							PacBio	SAMN05823148	98.6	1.43
+GCF_001922105.1	ASM192210v1	Xanthomonas citri pv. citri		LH201					GCF_001922105.1-RS_2024_05_05	Complete Genome	2016-12-27		3							PacBio	SAMN05823148	98.6	1.43
+GCA_002952295.1	ASM295229v1	Xanthomonas citri pv. citri		03-1638-1-1					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2018-02-06		3							PacBio	SAMN07611881	98.68	1.43
+GCF_002952295.1	ASM295229v1	Xanthomonas citri pv. citri		03-1638-1-1					GCF_002952295.1-RS_2024_05_05	Complete Genome	2018-02-06		3							PacBio	SAMN07611881	98.68	1.43
+GCA_001922085.1	ASM192208v1	Xanthomonas citri pv. citri		LJ207-7					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-12-27		4							PacBio	SAMN05823144	98.6	1.51
+GCF_001922085.1	ASM192208v1	Xanthomonas citri pv. citri		LJ207-7					GCF_001922085.1-RS_2024_05_05	Complete Genome	2016-12-27		4							PacBio	SAMN05823144	98.6	1.51
+GCA_023205075.1	ASM2320507v1	Xanthomonas citri pv. citri		CQ13					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-05-02		3							Illumina NovaSeq; Oxford Nanopore	SAMN27753378	99.23	0.37
+GCF_023205075.1	ASM2320507v1	Xanthomonas citri pv. citri		CQ13					GCF_023205075.1-RS_2024_05_12	Complete Genome	2022-05-02		3							Illumina NovaSeq; Oxford Nanopore	SAMN27753378	99.23	0.37
+GCA_003665475.1	ASM366547v1	Xanthomonas citri pv. citri		Xcc29-1					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2018-10-17		4							Illumina HiSeq4000	SAMN07665076	98.86	0.45
+GCF_003665475.1	ASM366547v1	Xanthomonas citri pv. citri		Xcc29-1					GCF_003665475.1-RS_2024_05_06	Complete Genome	2018-10-17		4							Illumina HiSeq4000	SAMN07665076	98.86	0.45
+GCA_000961335.1	ASM96133v1	Xanthomonas citri pv. citri		gd3					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911835	99.09	0.37
+GCF_000961335.1	ASM96133v1	Xanthomonas citri pv. citri		GD3					GCF_000961335.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911835	99.09	0.37
+GCA_000961355.1	ASM96135v1	Xanthomonas citri pv. citri		gd2					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911834	99.09	0.37
+GCF_000961355.1	ASM96135v1	Xanthomonas citri pv. citri		GD2					GCF_000961355.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911834	99.09	0.37
+GCA_003665455.1	ASM366545v1	Xanthomonas citri pv. citri		Xcc49					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2018-10-17		3							Illumina HiSeq4000	SAMN07638001	98.86	0.37
+GCF_003665455.1	ASM366545v1	Xanthomonas citri pv. citri		Xcc49					GCF_003665455.1-RS_2024_05_06	Complete Genome	2018-10-17		3							Illumina HiSeq4000	SAMN07638001	98.86	0.37
+GCA_000961255.1	ASM96125v1	Xanthomonas citri pv. citri		MN10					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911841	98.95	0.37
+GCF_000961255.1	ASM96125v1	Xanthomonas citri pv. citri		MN10					GCF_000961255.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911841	98.95	0.37
+GCA_000961295.1	ASM96129v1	Xanthomonas citri pv. citri		jx5					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911837	99.1	0.37
+GCF_000961295.1	ASM96129v1	Xanthomonas citri pv. citri		JX5					GCF_000961295.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911837	99.1	0.37
+GCA_000961315.1	ASM96131v1	Xanthomonas citri pv. citri		jx4					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911836	99.48	0.37
+GCF_000961315.1	ASM96131v1	Xanthomonas citri pv. citri		JX4					GCF_000961315.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911836	99.48	0.37
+GCA_001028285.3	ASM102828v3	Xanthomonas citri pv. citri		jx-6					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-03-25		3							Illumina Miseq	SAMN03765509	98.71	0.37
+GCF_001028285.3	ASM102828v3	Xanthomonas citri pv. citri		jx-6					GCF_001028285.3-RS_2024_05_05	Complete Genome	2016-03-25		3							Illumina Miseq	SAMN03765509	98.71	0.37
+GCA_000961155.1	ASM96115v1	Xanthomonas citri pv. citri		UI7					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911839	99.19	0.37
+GCF_000961155.1	ASM96115v1	Xanthomonas citri pv. citri		UI7					GCF_000961155.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911839	99.19	0.37
+GCA_000961235.1	ASM96123v1	Xanthomonas citri pv. citri		MN11					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911842	98.95	0.37
+GCF_000961235.1	ASM96123v1	Xanthomonas citri pv. citri		MN11					GCF_000961235.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911842	98.95	0.37
+GCA_019434315.1	ASM1943431v1	Xanthomonas citri pv. citri		B2					Annotation submitted by Academia Sinica	Complete Genome	2021-08-02		3							Oxford Nanopore;Illumina	SAMN15461540	99.35	0.37
+GCF_019434315.1	ASM1943431v1	Xanthomonas citri pv. citri		B2					GCF_019434315.1-RS_2024_05_06	Complete Genome	2021-08-02		3							Oxford Nanopore;Illumina	SAMN15461540	99.35	0.37
+GCA_017723895.1	ASM1772389v1	Xanthomonas citri pv. glycines		CFBP7119					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-03		3							PacBio RSII; Illumina HiSeq	SAMN18397182	99.6	0.83
+GCF_017723895.1	ASM1772389v1	Xanthomonas citri pv. glycines		CFBP7119					GCF_017723895.1-RS_2024_05_12	Complete Genome	2021-04-03		3							PacBio RSII; Illumina HiSeq	SAMN18397182	99.6	0.83
+GCA_030582195.1	ASM3058219v1	Xanthomonas citri pv. glycines		T8					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2023-08-02		2							PacBio HIFI	SAMN28868089	99.6	0.46
+GCF_030582195.1	ASM3058219v1	Xanthomonas citri pv. glycines		T8					GCF_030582195.1-RS_2024_05_12	Complete Genome	2023-08-02		2							PacBio HIFI	SAMN28868089	99.6	0.46
+GCA_007567665.1	ASM756766v1	Xanthomonas citri pv. glycines		8ra					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-07-29		2							PacBio RSII	SAMN12340633	99.35	0.71
+GCF_007567665.1	ASM756766v1	Xanthomonas citri pv. glycines		8ra					GCF_007567665.1-RS_2024_05_06	Complete Genome	2019-07-29		2							PacBio RSII	SAMN12340633	99.35	0.71
+GCA_008593565.1	ASM859356v1	Xanthomonas citri pv. glycines		EB08					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-09-19		3							PacBio	SAMN08391414	99.6	0.74
+GCF_008593565.1	ASM859356v1	Xanthomonas citri pv. glycines		EB08					GCF_008593565.1-RS_2024_05_06	Complete Genome	2019-09-19		3							PacBio	SAMN08391414	99.6	0.74
+GCA_007724385.1	ASM772438v1	Xanthomonas citri pv. glycines		K2					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-07-31		2							PacBio RSII	SAMN12340803	99.02	0.71
+GCF_007724385.1	ASM772438v1	Xanthomonas citri pv. glycines		K2					GCF_007724385.1-RS_2024_05_06	Complete Genome	2019-07-31		2							PacBio RSII	SAMN12340803	99.02	0.71
+GCA_007724025.1	ASM772402v1	Xanthomonas citri pv. glycines		1157					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-07-31		2							PacBio RSII	SAMN12340780	99.6	0.77
+GCF_007724025.1	ASM772402v1	Xanthomonas citri pv. glycines		1157					GCF_007724025.1-RS_2024_05_06	Complete Genome	2019-07-31		2							PacBio RSII	SAMN12340780	99.6	0.77
+GCA_030582375.1	ASM3058237v1	Xanthomonas citri pv. glycines		B1					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2023-08-02		2							PacBio HIFI	SAMN29964876	99.6	0.46
+GCF_030582375.1	ASM3058237v1	Xanthomonas citri pv. glycines		B1					GCF_030582375.1-RS_2024_05_12	Complete Genome	2023-08-02		2							PacBio HIFI	SAMN29964876	99.6	0.46
+GCA_007723825.1	ASM772382v1	Xanthomonas citri pv. glycines		1018					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-07-31		2							PacBio RSII	SAMN12340735	99.6	0.46
+GCF_007723825.1	ASM772382v1	Xanthomonas citri pv. glycines		1018					GCF_007723825.1-RS_2024_05_06	Complete Genome	2019-07-31		2							PacBio RSII	SAMN12340735	99.6	0.46
+GCA_027186325.1	ASM2718632v1	Xanthomonas citri pv. malvacearum		CFBP 2036					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-12-21		3							Oxford Nanopore GridION	SAMN23345446	97.39	0.5
+GCF_027186325.1	ASM2718632v1	Xanthomonas citri pv. malvacearum		CFBP 2036					GCF_027186325.1-RS_2024_05_12	Complete Genome	2022-12-21		3							Oxford Nanopore GridION	SAMN23345446	97.39	0.5
+GCA_002288565.1	ASM228856v1	Xanthomonas citri pv. malvacearum		AR81009					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-09-08		4							PacBio	SAMN07447516	98.97	0.5
+GCF_002288565.1	ASM228856v1	Xanthomonas citri pv. malvacearum		AR81009					GCF_002288565.1-RS_2024_05_05	Complete Genome	2017-09-08		4							PacBio	SAMN07447516	98.97	0.5
+GCA_018831345.1	ASM1883134v1	Xanthomonas citri		T21					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-06-10		2							PacBio	SAMN08374169	99.44	0.75
+GCF_018831345.1	ASM1883134v1	Xanthomonas citri		T21					GCF_018831345.1-RS_2024_05_12	Complete Genome	2021-06-10		2							PacBio	SAMN08374169	99.44	0.75
+GCA_009671025.1	ASM967102v1	Xanthomonas citri pv. malvacearum		HD-1					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-11-19		3							PacBio Sequel	SAMN13193097	98.35	0.37
+GCF_009671025.1	ASM967102v1	Xanthomonas citri pv. malvacearum		HD-1					GCF_009671025.1-RS_2024_05_06	Complete Genome	2019-11-19		3							PacBio Sequel	SAMN13193097	98.35	0.37
+GCA_040202935.2	ASM4020293v2	Xanthomonas citri pv. malvacearum		WHRI 10262					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-09-10		3							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354537	99.26	0.5
+GCF_040202935.2	ASM4020293v2	Xanthomonas citri pv. malvacearum		WHRI 10262					GCF_040202935.2-RS_2024_09_11	Complete Genome	2024-09-12		3							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354537	99.26	0.5
+GCA_027186285.1	ASM2718628v1	Xanthomonas citri pv. malvacearum		CFBP 2530					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-12-21		3							Oxford Nanopore GridION	SAMN22082069	97.44	0.37
+GCF_027186285.1	ASM2718628v1	Xanthomonas citri pv. malvacearum		CFBP 2530					GCF_027186285.1-RS_2024_05_06	Complete Genome	2022-12-21		3							Oxford Nanopore GridION	SAMN22082069	97.44	0.37
+GCA_002224545.1	ASM222454v1	Xanthomonas citri pv. malvacearum		XcmN1003					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-07-24		2							Pacific Biosciences	SAMN04166615	98.81	0.5
+GCF_002224545.1	ASM222454v1	Xanthomonas citri pv. malvacearum		XcmN1003					GCF_002224545.1-RS_2024_05_05	Complete Genome	2017-07-24		2							Pacific Biosciences	SAMN04166615	98.81	0.5
+GCA_002224525.1	ASM222452v1	Xanthomonas citri pv. malvacearum		XcmH1005					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-07-24		2							Pacific Biosciences	SAMN04166563	98.23	0.37
+GCF_002224525.1	ASM222452v1	Xanthomonas citri pv. malvacearum		XcmH1005					GCF_002224525.1-RS_2024_05_05	Complete Genome	2017-07-24		2							Pacific Biosciences	SAMN04166563	98.23	0.37
+GCA_019434355.1	ASM1943435v1	Xanthomonas citri		T4					Annotation submitted by Academia Sinica	Complete Genome	2021-08-02		3							Oxford Nanopore;Illumina	SAMN15461539	98.98	1.87
+GCF_019434355.1	ASM1943435v1	Xanthomonas citri		T4					GCF_019434355.1-RS_2024_05_12	Complete Genome	2021-08-02		3							Oxford Nanopore;Illumina	SAMN15461539	98.98	1.87
+GCA_027186305.1	ASM2718630v1	Xanthomonas citri pv. malvacearum		CFBP 2012					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-12-21		2							Oxford Nanopore GridION	SAMN23345445	96.97	0.37
+GCF_027186305.1	ASM2718630v1	Xanthomonas citri pv. malvacearum		CFBP 2012					GCF_027186305.1-RS_2024_05_12	Complete Genome	2022-12-21		2							Oxford Nanopore GridION	SAMN23345445	96.97	0.37
+GCA_016495605.1	ASM1649560v1	Xanthomonas citri		UnB-XtecTG02-2					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-01-05		1							Illumina HiSeq	SAMN14080128	99.47	0.51
+GCF_016495605.1	ASM1649560v1	Xanthomonas citri		UnB-XtecTG02-2					GCF_016495605.1-RS_2024_05_06	Complete Genome	2021-01-05		1							Illumina HiSeq	SAMN14080128	99.47	0.51
+GCA_015243835.1	ASM1524383v1	Xanthomonas citri		UnB-Xtec2D					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2020-11-05		1							Oxford Nanopore MiniION; Illumina HiSeq	SAMN12628543	99.47	0.51
+GCF_015243835.1	ASM1524383v1	Xanthomonas citri		UnB-Xtec2D					GCF_015243835.1-RS_2024_05_06	Complete Genome	2020-11-05		1							Oxford Nanopore MiniION; Illumina HiSeq	SAMN12628543	99.47	0.51
+GCA_018831365.1	ASM1883136v1	Xanthomonas citri		M11					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-06-10		2							PacBio	SAMN08374168	99.63	0.25
+GCF_018831365.1	ASM1883136v1	Xanthomonas citri		M11					GCF_018831365.1-RS_2024_05_06	Complete Genome	2021-06-10		2							PacBio	SAMN08374168	99.63	0.25
+GCA_002288585.1	ASM228858v1	Xanthomonas citri pv. malvacearum		MS14003					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-09-08		4							PacBio	SAMN07447517	99.14	0.28
+GCF_002288585.1	ASM228858v1	Xanthomonas citri pv. malvacearum		MS14003					GCF_002288585.1-RS_2024_05_05	Complete Genome	2017-09-08		4							PacBio	SAMN07447517	99.14	0.28
+GCA_040202415.2	ASM4020241v2	Xanthomonas citri		WHRI 6104					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-09-10		4							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354557	97.97	0.12
+GCF_040202415.2	ASM4020241v2	Xanthomonas citri		WHRI 6104					GCF_040202415.2-RS_2024_09_11	Complete Genome	2024-09-12		4							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354557	97.97	0.12
+GCA_040285035.1	Xcm_TX4-attenuated_assembly	Xanthomonas citri pv. malvacearum		Xcm TX4-attenuated					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-06-24		4							PacBio Sequel	SAMN41592779	99.23	0.28
+GCF_040285035.1	Xcm_TX4-attenuated_assembly	Xanthomonas citri pv. malvacearum		Xcm TX4-attenuated					GCF_040285035.1-RS_2024_06_25	Complete Genome	2024-06-25		4							PacBio Sequel	SAMN41592779	99.23	0.28
+GCA_040285055.1	ASM4028505v1	Xanthomonas citri pv. malvacearum		Xcm TX4					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-06-24		4							PacBio Sequel	SAMN41592776	99.23	0.28
+GCF_040285055.1	ASM4028505v1	Xanthomonas citri pv. malvacearum		Xcm TX4					GCF_040285055.1-RS_2024_06_25	Complete Genome	2024-06-25		4							PacBio Sequel	SAMN41592776	99.23	0.28
+GCA_040285045.1	ASM4028504v1	Xanthomonas citri pv. malvacearum		Xcm TX7					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-06-24		4							PacBio Sequel	SAMN41592777	99.23	0.28
+GCF_040285045.1	ASM4028504v1	Xanthomonas citri pv. malvacearum		Xcm TX7					GCF_040285045.1-RS_2024_06_25	Complete Genome	2024-06-25		4							PacBio Sequel	SAMN41592777	99.23	0.28
+GCA_001719145.1	ASM171914v1	Xanthomonas citri pv. malvacearum		MSCT					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-09-06		4							Illumina MiSeq; PacBio; NanoPore	SAMN05595756	99.23	0.28
+GCF_001719145.1	ASM171914v1	Xanthomonas citri pv. malvacearum		MSCT					GCF_001719145.1-RS_2024_05_05	Complete Genome	2016-09-06		4							Illumina MiSeq; PacBio; NanoPore	SAMN05595756	99.23	0.28
+GCA_040284385.1	ASM4028438v1	Xanthomonas citri pv. malvacearum		Xcm TX9					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-06-24		4							PacBio Sequel	SAMN41592778	98.98	0.28
+GCF_040284385.1	ASM4028438v1	Xanthomonas citri pv. malvacearum		Xcm TX9					GCF_040284385.1-RS_2024_06_25	Complete Genome	2024-06-25		4							PacBio Sequel	SAMN41592778	98.98	0.28
+GCA_020525465.1	ASM2052546v1	Xanthomonas citri pv. mangiferaeindicae		GZ09					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-10-19		1							Nanopore	SAMN21592034	97.86	0.01
+GCF_020525465.1	ASM2052546v1	Xanthomonas citri pv. mangiferaeindicae		GZ09					GCF_020525465.1-RS_2024_05_12	Complete Genome	2021-10-19		1							Nanopore	SAMN21592034	97.86	0.01
+GCA_020544545.1	ASM2054454v1	Xanthomonas citri pv. mangiferaeindicae		GXG07					Annotation submitted by Guangxi Universtiy	Complete Genome	2021-10-25		3							PacBio Sequel	SAMN18712706	97.86	
+GCF_020544545.1	ASM2054454v1	Xanthomonas citri pv. mangiferaeindicae		GXG07					GCF_020544545.1-RS_2024_05_12	Complete Genome	2021-10-25		3							PacBio Sequel	SAMN18712706	97.86	
+GCA_004000475.1	ASM400047v1	Xanthomonas citri pv. fuscans		ISO118C5					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-01-08		2							Illumina; PacBio	SAMN03842218	97.73	0.31
+GCF_004000475.1	ASM400047v1	Xanthomonas citri pv. fuscans		ISO118C5					GCF_004000475.1-RS_2024_05_06	Complete Genome	2019-01-08		2							Illumina; PacBio	SAMN03842218	97.73	0.31
+GCA_003999485.1	ASM399948v1	Xanthomonas citri pv. fuscans		ISO118C1					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-01-08		2							Illumina; PacBio	SAMN03842217	97.73	0.31
+GCF_003999485.1	ASM399948v1	Xanthomonas citri pv. fuscans		ISO118C1					GCF_003999485.1-RS_2024_05_06	Complete Genome	2019-01-08		2							Illumina; PacBio	SAMN03842217	97.73	0.31
+GCA_003999505.1	ASM399950v1	Xanthomonas citri pv. fuscans		ISO12C3					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-01-08		2							Illumina; PacBio	SAMN03842216	97.73	0.31
+GCF_003999505.1	ASM399950v1	Xanthomonas citri pv. fuscans		ISO12C3					GCF_003999505.1-RS_2024_05_06	Complete Genome	2019-01-08		2							Illumina; PacBio	SAMN03842216	97.73	0.31
+GCA_018831385.1	ASM1883138v1	Xanthomonas citri pv. fuscans		PR8F					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-06-10		3							PacBio	SAMN08374172	97.91	0.31
+GCF_018831385.1	ASM1883138v1	Xanthomonas citri pv. fuscans		PR8F					GCF_018831385.1-RS_2024_05_06	Complete Genome	2021-06-10		3							PacBio	SAMN08374172	97.91	0.31
+GCA_018831325.1	ASM1883132v1	Xanthomonas citri pv. fuscans		FH61					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-06-10		3							PacBio	SAMN08374170	97.85	0.25
+GCF_018831325.1	ASM1883132v1	Xanthomonas citri pv. fuscans		FH61					GCF_018831325.1-RS_2024_05_12	Complete Genome	2021-06-10		3							PacBio	SAMN08374170	97.85	0.25
+GCA_025987665.1	ASM2598766v1	Xanthomonas citri pv. fuscans		BRM48906					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-11-03		3							PacBio Sequel	SAMN31508452	99.08	0.57
+GCF_025987665.1	ASM2598766v1	Xanthomonas citri pv. fuscans		BRM48906					GCF_025987665.1-RS_2024_05_12	Complete Genome	2022-11-03		3							PacBio Sequel	SAMN31508452	99.08	0.57
+GCA_006228425.1	ASM622842v1	Xanthomonas citri pv. punicae		LMG7439					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN04145206	98.59	0.37
+GCF_006228425.1	ASM622842v1	Xanthomonas citri pv. punicae		LMG7439					GCF_006228425.1-RS_2024_05_06	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN04145206	98.59	0.37
+GCA_025987645.1	ASM2598764v1	Xanthomonas citri pv. fuscans		LNPV 30.30					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-11-03		2							PacBio Sequel	SAMN31508453	99.58	0.25
+GCF_025987645.1	ASM2598764v1	Xanthomonas citri pv. fuscans		LNPV 30.30					GCF_025987645.1-RS_2024_05_12	Complete Genome	2022-11-03		2							PacBio Sequel	SAMN31508453	99.58	0.25
+GCA_025987705.1	ASM2598770v1	Xanthomonas citri pv. fuscans		CFBP 6533					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-11-03		2							PacBio Sequel	SAMN31508451	99.12	0.25
+GCF_025987705.1	ASM2598770v1	Xanthomonas citri pv. fuscans		CFBP 6533					GCF_025987705.1-RS_2024_05_06	Complete Genome	2022-11-03		2							PacBio Sequel	SAMN31508451	99.12	0.25
+GCA_040202995.2	NCPPB381v2_ONT	Xanthomonas citri pv. fuscans		WHRI 10261					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-08-30		2							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354536	97.94	1.5
+GCF_040202995.2	NCPPB381v2_ONT	Xanthomonas citri pv. fuscans		WHRI 10261					GCF_040202995.2-RS_2024_08_31	Complete Genome	2024-08-31		2							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354536	97.94	1.5
+GCA_018831285.1	ASM1883128v1	Xanthomonas citri pv. fuscans		M12					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-06-10		3							PacBio	SAMN08374171	98.15	0.31
+GCF_018831285.1	ASM1883128v1	Xanthomonas citri pv. fuscans		M12					GCF_018831285.1-RS_2024_05_06	Complete Genome	2021-06-10		3							PacBio	SAMN08374171	98.15	0.31
+GCA_040202945.2	ASM4020294v2	Xanthomonas citri pv. fuscans		WHRI 10263					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-08-28		3							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354538	99.26	0.59
+GCF_040202945.2	ASM4020294v2	Xanthomonas citri pv. fuscans		WHRI 10263					GCF_040202945.2-RS_2024_08_29	Complete Genome	2024-08-29		3							Illumina NovaSeq; Oxford Nanopore PromethION	SAMN40354538	99.26	0.59
+GCA_017742815.1	ASM1774281v1	Xanthomonas citri pv. fuscans		6165R(delta)tal22B					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-04		2							PacBio	SAMN18332097	98.4	0.25
+GCF_017742815.1	ASM1774281v1	Xanthomonas citri pv. fuscans		6165R(delta)tal22B					GCF_017742815.1-RS_2024_05_12	Complete Genome	2021-04-04		2							PacBio	SAMN18332097	98.4	0.25
+GCA_000969685.1	ASM96968v1	Xanthomonas citri pv. fuscans		4834-R					Annotation submitted by FNX (French Network on xanthomonads)	Complete Genome	2013-10-11		4								SAMEA3283112	97.38	0.06
+GCF_000969685.2	ASM96968v1	Xanthomonas citri pv. fuscans		4834-R					GCF_000969685.2-RS_2024_05_05	Complete Genome	2013-10-11		4								SAMEA3283112	97.38	0.06
+GCA_000007165.1	ASM716v1	Xanthomonas citri pv. citri str. 306		306					Annotation submitted by Sao Paulo state (Brazil) Consortium	Complete Genome	2002-05-29		3								SAMN02603846	98.86	0.37
+GCF_000007165.1	ASM716v1	Xanthomonas citri pv. citri str. 306		306					GCF_000007165.1-RS_2024_05_05	Complete Genome	2002-05-29		3								SAMN02603846	98.86	0.37
+GCA_040142795.1	CCRMTAQ13.2.0	Xanthomonas citri pv. anacardii		CCRMTAQ13					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2024-06-12		1							Oxford Nanopore MinION	SAMN41265889	97.52	0.46
+GCF_040142795.1	CCRMTAQ13.2.0	Xanthomonas citri pv. anacardii		CCRMTAQ13					GCF_040142795.1-RS_2024_06_12	Complete Genome	2024-06-13		1							Oxford Nanopore MinION	SAMN41265889	97.52	0.46
+GCA_002163775.1	ASM216377v1	Xanthomonas citri pv. glycines str. 12-2		12-2					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-06-02		3							Pacific Biosciences	SAMN05179543	99.54	0.46
+GCF_002163775.1	ASM216377v1	Xanthomonas citri pv. glycines str. 12-2		12-2					GCF_002163775.1-RS_2024_05_05	Complete Genome	2017-06-02		3							Pacific Biosciences	SAMN05179543	99.54	0.46
+GCA_001854145.2	ASM185414v2	Xanthomonas citri pv. glycines str. 8ra		8ra					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2018-11-28		2							PacBio	SAMN05722944	99.1	0.71
+GCF_001854145.2	ASM185414v2	Xanthomonas citri pv. glycines str. 8ra		8ra					GCF_001854145.2-RS_2024_05_06	Complete Genome	2018-11-28		2							PacBio	SAMN05722944	99.1	0.71
+GCA_017723855.1	ASM1772385v1	Xanthomonas citri pv. glycines CFBP 2526		CFBP 2526					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-03		2							PacBio RSII; Illumina HiSeq	SAMN18397212	99.6	0.71
+GCF_017723855.1	ASM1772385v1	Xanthomonas citri pv. glycines CFBP 2526		CFBP 2526					GCF_017723855.1-RS_2024_05_06	Complete Genome	2021-04-03		2							PacBio RSII; Illumina HiSeq	SAMN18397212	99.6	0.71
+GCA_002218245.1	ASM221824v1	Xanthomonas citri pv. vignicola		CFBP7111					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-07-13		4							PacBio	SAMN07252112	99.06	0.93
+GCF_002218245.1	ASM221824v1	Xanthomonas citri pv. vignicola		CFBP7111					GCF_002218245.1-RS_2024_05_05	Complete Genome	2017-07-13		4							PacBio	SAMN07252112	99.06	0.93
+GCA_002019265.2	ASM201926v2	Xanthomonas citri pv. durantae		LMG696					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2022-08-24		5							Oxford Nanopore MinION; Illumina MiSeq	SAMN04145199	98.44	0.83
+GCF_002019265.2	ASM201926v2	Xanthomonas citri pv. durantae		LMG696					GCF_002019265.2-RS_2024_05_06	Complete Genome	2022-08-24		5							Oxford Nanopore MinION; Illumina MiSeq	SAMN04145199	98.44	0.83
+GCA_000349225.1	ASM34922v1	Xanthomonas citri subsp. citri Aw12879		Aw12879					Annotation submitted by CREC, University of Florida	Complete Genome	2013-03-26		3								SAMN02603165	98.02	0.5
+GCF_000349225.1	ASM34922v1	Xanthomonas citri subsp. citri Aw12879		Aw12879					GCF_000349225.1-RS_2024_05_05	Complete Genome	2013-03-26		3								SAMN02603165	98.02	0.5
+GCA_002759335.2	ASM275933v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6992					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-23		2							PacBio; Illumina HiSeq	SAMN06829854	99.47	0.53
+GCF_002759335.2	ASM275933v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6992					GCF_002759335.2-RS_2024_05_06	Complete Genome	2021-03-23		2							PacBio; Illumina HiSeq	SAMN06829854	99.47	0.53
+GCA_002759375.2	ASM275937v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP7767					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-29		3							PacBio; Illumina HiSeq	SAMN06829140	98.18	0.1
+GCF_002759375.1	ASM275937v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP7767					GCF_002759375.1-RS_2024_05_12	Complete Genome	2021-03-29		3							PacBio; Illumina HiSeq	SAMN06829140	98.18	0.1
+GCA_001610795.1	ASM161079v1	Xanthomonas citri pv. aurantifolii		FDC 1559					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-04-05		3							PacBio	SAMN03317020	97.16	0.39
+GCF_001610795.1	ASM161079v1	Xanthomonas citri pv. aurantifolii		FDC 1559					GCF_001610795.1-RS_2024_05_05	Complete Genome	2016-04-05		3							PacBio	SAMN03317020	97.16	0.39
+GCA_000816885.1	ASM81688v1	Xanthomonas citri subsp. citri A306		A306					Annotation submitted by CREC, University of Florida	Complete Genome	2015-01-09		3							Illumina GA IIx	SAMN03278355	98.81	0.37
+GCF_000816885.1	ASM81688v1	Xanthomonas citri subsp. citri A306		A306					GCF_000816885.1-RS_2024_05_05	Complete Genome	2015-01-09		3							Illumina GA IIx	SAMN03278355	98.81	0.37
+GCA_002759415.2	ASM275941v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6167					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-01		5							PacBio	SAMN06829865	98.1	0.31
+GCF_002759415.2	ASM275941v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6167					GCF_002759415.2-RS_2024_05_06	Complete Genome	2021-04-01		5							PacBio	SAMN06829865	98.1	0.31
+GCA_001610815.1	ASM161081v1	Xanthomonas citri pv. aurantifolii		FDC 1609					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-04-05		4							PacBio	SAMN03317027	98.19	0.35
+GCF_001610815.1	ASM161081v1	Xanthomonas citri pv. aurantifolii		FDC 1609					GCF_001610815.1-RS_2024_05_05	Complete Genome	2016-04-05		4							PacBio	SAMN03317027	98.19	0.35
+GCA_000961175.1	ASM96117v1	Xanthomonas citri subsp. citri UI6		UI6					Annotation submitted by Citrus Research and Education center, Univerisity of Florida	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911838	99.19	0.37
+GCF_000961175.1	ASM96117v1	Xanthomonas citri subsp. citri UI6		UI6					GCF_000961175.1-RS_2024_05_05	Complete Genome	2015-03-24		3							Illumina CLC	SAMN02911838	99.19	0.37
+GCA_002759175.2	ASM275917v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6994R					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-24		2							PacBio; Illumina HiSeq	SAMN06829859	99.47	0.6
+GCF_002759175.2	ASM275917v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6994R					GCF_002759175.2-RS_2024_05_06	Complete Genome	2021-03-24		2							PacBio; Illumina HiSeq	SAMN06829859	99.47	0.6
+GCA_002218285.1	ASM221828v1	Xanthomonas citri pv. vignicola		CFBP7113					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-07-13		1							PacBio	SAMN07251989	98.9	0.34
+GCF_002218285.1	ASM221828v1	Xanthomonas citri pv. vignicola		CFBP7113					GCF_002218285.1-RS_2024_05_05	Complete Genome	2017-07-13		1							PacBio	SAMN07251989	98.9	0.34
+GCA_002759315.2	ASM275931v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6990					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-24		2							PacBio; Illumina HiSeq	SAMN06829587	99.63	0.25
+GCF_002759315.2	ASM275931v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6990					GCF_002759315.2-RS_2024_05_12	Complete Genome	2021-03-24		2							PacBio; Illumina HiSeq	SAMN06829587	99.63	0.25
+GCA_002759295.2	ASM275929v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6989					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-23		2							PacBio	SAMN06829585	99.63	0.25
+GCF_002759295.2	ASM275929v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6989					GCF_002759295.2-RS_2024_05_12	Complete Genome	2021-03-23		2							PacBio	SAMN06829585	99.63	0.25
+GCA_002759275.2	ASM275927v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6988R					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-22		2							PacBio; Illumina HiSeq	SAMN06829542	99.63	0.25
+GCF_002759275.2	ASM275927v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6988R					GCF_002759275.2-RS_2024_05_06	Complete Genome	2021-03-22		2							PacBio; Illumina HiSeq	SAMN06829542	99.63	0.25
+GCA_002759395.2	ASM275939v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6991					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-23		3							PacBio; Illumina HiSeq	SAMN06829858	99.63	0.42
+GCF_002759395.2	ASM275939v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6991					GCF_002759395.2-RS_2024_05_06	Complete Genome	2021-03-23		3							PacBio; Illumina HiSeq	SAMN06829858	99.63	0.42
+GCA_002759255.3	ASM275925v3	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6975					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-01		4							PacBio	SAMN06829867	98.4	0.06
+GCF_002759255.2	ASM275925v3	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6975					GCF_002759255.2-RS_2024_05_06	Complete Genome	2021-04-01		4							PacBio	SAMN06829867	98.4	0.06
+GCA_002759195.2	ASM275919v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6996R					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-24		2							PacBio; Illumina HiSeq	SAMN06829860	99.47	0.5
+GCF_002759195.2	ASM275919v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6996R					GCF_002759195.2-RS_2024_05_06	Complete Genome	2021-03-24		2							PacBio; Illumina HiSeq	SAMN06829860	99.47	0.5
+GCA_002759215.3	ASM275921v3	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6165					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-01		2							PacBio; Illumina HiSeq	SAMN06829306	98.65	0.25
+GCF_002759215.2	ASM275921v3	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6165					GCF_002759215.2-RS_2024_05_12	Complete Genome	2021-04-01		2							PacBio; Illumina HiSeq	SAMN06829306	98.65	0.25
+GCA_002759235.2	ASM275923v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6166					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-03-29		5							PacBio; Illumina HiSeq	SAMN06829862	98.18	0.12
+GCF_002759235.2	ASM275923v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP6166					GCF_002759235.2-RS_2024_05_06	Complete Genome	2021-03-29		5							PacBio; Illumina HiSeq	SAMN06829862	98.18	0.12
+GCA_002759355.2	ASM275935v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP4885					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-04-21		4							PacBio RSII; Illumina; 454	SAMN06829861	97.43	0.06
+GCF_002759355.2	ASM275935v2	Xanthomonas citri pv. phaseoli var. fuscans		CFBP4885					GCF_002759355.2-RS_2024_05_06	Complete Genome	2021-04-21		4							PacBio RSII; Illumina; 454	SAMN06829861	97.43	0.06
+GCA_002079965.1	ASM207996v1	Xanthomonas citri pv. aurantifolii		FDC 1561					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-04-05		2							PacBio	SAMN03317022	98.14	0.25
+GCF_002079965.1	ASM207996v1	Xanthomonas citri pv. aurantifolii		FDC 1561					GCF_002079965.1-RS_2024_05_05	Complete Genome	2017-04-05		2							PacBio	SAMN03317022	98.14	0.25
+GCA_001610915.1	ASM161091v1	Xanthomonas citri pv. aurantifolii		1566					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2016-04-05		2							PacBio	SAMN03835495	97.22	0.25
+GCF_001610915.1	ASM161091v1	Xanthomonas citri pv. aurantifolii		1566					GCF_001610915.1-RS_2024_05_05	Complete Genome	2016-04-05		2							PacBio	SAMN03835495	97.22	0.25
+GCF_002688625.1	ASM268862v1	Xanthomonas citri pv. anacardii CFBP 2913		CFBP 2913					GCF_002688625.1-RS_2024_05_05	Chromosome	2017-10-24		1							Illumina HiSeq	SAMN07766623	99.14	0.58
+GCF_030144425.1	ASM3014442v1	Xanthomonas citri pv. citri		HERB_1852					GCF_030144425.1-RS_2024_05_06	Chromosome	2023-06-01		1							Illumina	SAMN30973820	99.19	0.37
+GCF_030144485.1	ASM3014448v1	Xanthomonas citri pv. citri		HERB_1865					GCF_030144485.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973823	99.19	0.37
+GCF_030144445.1	ASM3014444v1	Xanthomonas citri pv. citri		HERB_1854					GCF_030144445.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973821	99.19	0.37
+GCF_030144585.1	ASM3014458v1	Xanthomonas citri pv. citri		HERB_1946					GCF_030144585.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973828	99.19	0.37
+GCF_030144405.1	ASM3014440v1	Xanthomonas citri pv. citri		HERB_1845					GCF_030144405.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973819	99.19	0.37
+GCF_030144465.1	ASM3014446v1	Xanthomonas citri pv. citri		HERB_1859					GCF_030144465.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973822	99.19	0.37
+GCF_030144605.1	ASM3014460v1	Xanthomonas citri pv. citri		HERB_1963					GCF_030144605.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973829	98.61	0.37
+GCF_030144565.1	ASM3014456v1	Xanthomonas citri pv. citri		HERB_1922					GCF_030144565.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973827	99.02	0.37
+GCF_030144505.1	ASM3014450v1	Xanthomonas citri pv. citri		HERB_1884					GCF_030144505.1-RS_2024_05_06	Chromosome	2023-06-01		1							Illumina	SAMN30973824	99.19	0.37
+GCF_030144545.1	ASM3014454v1	Xanthomonas citri pv. citri		HERB_1915					GCF_030144545.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973826	99.06	0.37
+GCF_030144525.1	ASM3014452v1	Xanthomonas citri pv. citri		HERB_1911					GCF_030144525.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973825	99.19	0.37
+GCF_030144625.1	ASM3014462v1	Xanthomonas citri pv. citri		HERB_1974					GCF_030144625.1-RS_2024_05_12	Chromosome	2023-06-01		1							Illumina	SAMN30973830	99.06	0.37
+GCF_040819615.1	Xac-JS584-G1	Xanthomonas citri pv. citri		JS584					GCF_040819615.1-RS_2024_07_24	Chromosome	2024-07-24		1							Illumina HiSeq	SAMN37578371	98.23	0.63
+GCF_040819625.1	Xac-L20-G1	Xanthomonas citri pv. citri		LE20					GCF_040819625.1-RS_2024_07_24	Chromosome	2024-07-24		1							Illumina HiSeq	SAMN37581327	98.69	1
+GCA_041871175.1	Xss-V2-18	Xanthomonas citri pv. malvacearum		Xss-V2-18					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Chromosome	2024-09-09		4							Oxford Nanopore PromethION; Illumina	SAMN43253478	99.52	0.35
+GCF_041871175.1	Xss-V2-18	Xanthomonas citri pv. malvacearum		Xss-V2-18					GCF_041871175.1-RS_2024_09_09	Chromosome	2024-09-10		4							Oxford Nanopore PromethION; Illumina	SAMN43253478	99.52	0.35
+GCA_021379025.1	ASM2137902v1	Xanthomonas citri pv. punicae		119					Annotation submitted by Central University of Kerala	Chromosome	2022-01-06		3							PacBio	SAMN20800806	98.82	0.96
+GCF_021379025.1	ASM2137902v1	Xanthomonas citri pv. punicae		119					GCF_021379025.1-RS_2024_05_12	Chromosome	2022-01-06		3							PacBio	SAMN20800806	98.82	0.96
+GCA_002309515.1	ASM230951v1	Xanthomonas citri pv. fuscans		Xff49					Annotation submitted by Universidade Federal de Pelotas	Chromosome	2017-09-18		4							Illumina MiSeq	SAMN07563171	95.36	4.54
+GCF_002309515.1	ASM230951v1	Xanthomonas citri pv. fuscans		Xff49					GCF_002309515.1-RS_2024_05_05	Chromosome	2017-09-18		4							Illumina MiSeq	SAMN07563171	95.36	4.54
+GCF_002906675.1	ASM290667v1	Xanthomonas citri pv. fuscans CFBP 6988		CFBP 6988					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Chromosome	2018-01-30		1							Illumina HiSeq	SAMN02645882	99.63	0.25
+GCF_000495275.1	Xag-CFBP2526-G1	Xanthomonas citri pv. glycines CFBP 2526		CFBP 2526					GCF_000495275.1-RS_2024_05_05	Chromosome	2013-11-06	AUWO01	4							Illumina HiSeq	SAMN02469936	99.1	0.71
+GCA_001939965.1	ASM193996v1	Xanthomonas citri pv. citri		LM199					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Chromosome	2017-01-10	MSQV01	18							PacBio	SAMN05822798	97.97	1.65
+GCF_001939965.1	ASM193996v1	Xanthomonas citri pv. citri		LM199					GCF_001939965.1-RS_2024_05_05	Chromosome	2017-01-10	MSQV01	18							PacBio	SAMN05822798	97.97	1.65
+GCA_001939985.1	ASM193998v1	Xanthomonas citri pv. citri		LM180					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Chromosome	2017-01-10	MSQW01	10							PacBio	SAMN05823141	98.23	1.44
+GCF_001939985.1	ASM193998v1	Xanthomonas citri pv. citri		LM180					GCF_001939985.1-RS_2024_05_05	Chromosome	2017-01-10	MSQW01	10							PacBio	SAMN05823141	98.23	1.44
+GCF_000488895.1	Xag-CFBP7119-G1	Xanthomonas citri pv. glycines CFBP 7119		CFBP 7119					GCF_000488895.1-RS_2024_05_05	Chromosome	2013-10-31	AUWM01	4							Illumina HiSeq	SAMN02469937	99.35	0.83
+GCF_000454525.1	20120625	Xanthomonas citri pv. malvacearum X20		X20					GCF_000454525.1-RS_2024_05_05	Chromosome	2013-09-04	ATMB01	4							Illumina HiSeq	SAMN02469930	98.72	0.5
+GCF_000454505.1	20120625	Xanthomonas citri pv. malvacearum X18		X18					GCF_000454505.1-RS_2024_05_05	Chromosome	2013-08-29	ATMA01	4							Illumina HiSeq	SAMN02469929	99.23	0.28
+GCA_016801715.1	ASM1680171v1	Xanthomonas citri pv. citri		DAR73910					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2021-02-02		4							Oxford Nanopore MiniION; Illumina HiSeq	SAMN15815003	84.19	0.47
+GCA_002240395.1	ASM224039v1	Xanthomonas citri pv. mangiferaeindicae		XC01					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2017-08-03		1							Pacific Biosciences	SAMN05504068		
+GCA_006228545.1	ASM622854v1	Xanthomonas citri pv. punicae		LMG 859					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore Minion; Illumina MiSeq	SAMN09425328	97.63	0.37
+GCF_006228545.1	ASM622854v1	Xanthomonas citri pv. punicae		LMG 859					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore Minion; Illumina MiSeq	SAMN09425328	97.63	0.37
+GCA_006228445.1	ASM622844v1	Xanthomonas citri pv. punicae		NCPPB 3563					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		1							Nanopore; Illumina MiSeq	SAMN06853998	98.06	0.12
+GCF_006228445.1	ASM622844v1	Xanthomonas citri pv. punicae		NCPPB 3563					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		1							Nanopore; Illumina MiSeq	SAMN06853998	98.06	0.12
+GCA_006228485.1	ASM622848v1	Xanthomonas citri pv. punicae		LMG7504					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		3							Nanopore; Illumina MiSeq	SAMN04145207	97.69	0.12
+GCF_006228485.1	ASM622848v1	Xanthomonas citri pv. punicae		LMG7504					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		3							Nanopore; Illumina MiSeq	SAMN04145207	97.69	0.12
+GCA_006228505.1	ASM622850v1	Xanthomonas citri pv. punicae		BD0022					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN06885335	98.1	0.12
+GCF_006228505.1	ASM622850v1	Xanthomonas citri pv. punicae		BD0022					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN06885335	98.1	0.12
+GCA_006228465.1	ASM622846v1	Xanthomonas citri pv. punicae		BD0025					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN06885738	97.52	0.12
+GCF_006228465.1	ASM622846v1	Xanthomonas citri pv. punicae		BD0025					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN06885738	97.52	0.12
+GCA_006228525.1	ASM622852v1	Xanthomonas citri pv. punicae		BD0023					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN06885571	98.54	0.12
+GCF_006228525.1	ASM622852v1	Xanthomonas citri pv. punicae		BD0023					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	2019-06-11		2							Nanopore; Illumina MiSeq	SAMN06885571	98.54	0.12
+GCA_018972065.1	ASM1897206v1	Xanthomonas citri pv. citri					Herb_1937		NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Chromosome	2021-06-21		3							Illumina	SAMN16513130		
+GCA_021442305.1	ASM2144230v1	Xanthomonas citri pv. punicae		119					Annotation submitted by Central University of Kerala	Chromosome	2022-01-12		3							Illumina	SAMN20064840	97.48	0.12
+GCF_021442305.1	ASM2144230v1	Xanthomonas citri pv. punicae		119					NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Chromosome	2022-01-12		3							Illumina	SAMN20064840	97.48	0.12
+GCA_001494675.2	ASM149467v2	Xanthomonas citri pv. citri							Annotation submitted by Genoscope CEA	Chromosome	2016-02-19	CCWX01	67								SAMEA2752396	98.81	0.45
+GCA_001496995.1	ASX_PRJEB7164_v1	Xanthomonas citri pv. citri							Annotation submitted by Genoscope CEA	Chromosome	2015-12-23	CCWV01	96								SAMEA2755371	98.38	1.25

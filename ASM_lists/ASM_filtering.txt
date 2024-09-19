@@ -1,0 +1,31 @@
+COLUMN NAMES                            -------->  
+Assembly Accession                                          acc
+Assembly Name                                               name
+Organism Name                                               organism
+Organism Infraspecific Names Breed                          X
+Organism Infraspecific Names Strain                         X
+Organism Infraspecific Names Cultivar                       X
+Organism Infraspecific Names Ecotype                        X
+Organism Infraspecific Names Isolate                        X
+Organism Infraspecific Names Sex                            X
+Annotation Name                                             X
+Assembly Level                                              level
+Assembly Release Date                                       date
+WGS project accession                                       X
+Assembly Stats Number of Scaffolds                          X
+Annotation BUSCO Complete                                   X
+Annotation BUSCO Single Copy                                X
+Annotation BUSCO Duplicated                                 X
+Annotation BUSCO Fragmented                                 X
+Annotation BUSCO Missing                                    X
+Annotation BUSCO Lineage                                    X
+Assembly Sequencing Tech                                    platform
+Assembly BioSample Accession                                sample
+CheckM completeness                                         completeness
+CheckM contamination                                        contamination
+
+
+FILTERS
+All records        1427
+GenBank            699
+Long-read          409

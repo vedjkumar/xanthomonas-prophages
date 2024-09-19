@@ -2,18 +2,7 @@
 
 # from pathlib import Path
 import pandas as pd
-
-accepted = pd.DataFrame(columns=["Assembly Name", "Organism Name", "Organism Intraspecific Names Strain", "Assembly Level", "Assembly Release Date", "Assembly Sequencing Tech", "CheckM completeness", "CheckM contamination"])
-
-'''
-dir = "ASM_lists"
-files = Path(dir).glob("*.tsv")
-for file in files:
-  
-  with open(file) as f:
-    #
-'''
-
+from re import match, search
 import glob as gl
 
 dropped_cols = [
@@ -23,11 +12,37 @@ dropped_cols = [
   "Annotation BUSCO Missing", "Annotation BUSCO Lineage"
 ]
 
-files = gl.glob("*.tsv")
-for i in files:
+renamed_cols = {
+  "Assembly Accession": "accession", "Assembly Name": "assembly",
+  "Organism Name": "organism", "Organism Intraspecific Names Strain": "strain",
+  "Assembly Level": "level", "Assembly Release Date": "date",
+  "Assembly Sequencing Tech": "platform", "Assembly BioSample Accession": "sample",
+  "CheckM completeness": "completeness", "CheckM contamination": "contamination"
+}
 
-  f = open(i)
+with open("Genus_ASMs.tsv") as f:
+  
   df = pd.read_table(f)
 
-  # Remove unnecessary metadata
-  df.drop(columns=dropped_cols)
+df.rename(columns=renamed_cols)
+
+# Remove unnecessary metadata
+df.drop(columns=dropped_cols)
+
+# Remove RefSeq and short-read assemblies
+for i in df.index:
+
+  if match("GCF", df["accession"]) or search("(Illumina)|(454)|(Torrent)|(ABI)|(BGI)", df["platform"]):
+
+    df.drop(i)
+
+print(df)
+
+'''
+dir = "ASM_lists"
+files = Path(dir).glob("*.tsv")
+for file in files:
+  
+  with open(file) as f:
+    #
+'''

@@ -9,6 +9,7 @@ Organism Infraspecific Names Ecotype                        X
 Organism Infraspecific Names Isolate                        X
 Organism Infraspecific Names Sex                            X
 Annotation Name                                             X
+Assembly Stats Total Sequence Length                        length
 Assembly Level                                              level
 Assembly Release Date                                       date
 WGS project accession                                       X
@@ -21,11 +22,20 @@ Annotation BUSCO Missing                                    X
 Annotation BUSCO Lineage                                    X
 Assembly Sequencing Tech                                    platform
 Assembly BioSample Accession                                sample
-CheckM completeness                                         completeness
-CheckM contamination                                        contamination
+CheckM completeness                                         complete
+CheckM contamination                                        contam
 
+TRANSFORMS
+Length (bp) all divided by 10^6 to give length in Mbp
 
-FILTERS
+FILTERS -len
 All records        1427
 GenBank            699
 Long-read          409
+No blanks          361
+
+FILTERS +len
+All records        1427
+GenBank            699
+Long-read          367
+No blanks          361

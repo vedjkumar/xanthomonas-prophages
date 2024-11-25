@@ -1,0 +1,15 @@
+############################################
+CP059589_1 ( Unknown ) 
+--------------------------------------------
+### System: CAS-TypeIC (UserReplicon_CAS-TypeIC_1)
+#SequenceID	Cas-type/subtype	Gene status	System	Type	Begin	End	Strand	Other_information
+CP059589_1_860	cas2_TypeI-II-III	accessory	CAS	CDS	913867	914157	-	ID=1_860;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.601;conf=99.98;score=36.59;cscore=20.56;sscore=16.03;rscore=10.26;uscore=0.04;tscore=4.61;
+CP059589_1_861	cas1_TypeIC	mandatory	CAS-TypeIC	CDS	914172	915206	-	ID=1_861;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.664;conf=100.00;score=164.78;cscore=147.41;sscore=17.37;rscore=10.26;uscore=1.25;tscore=4.61;
+CP059589_1_862	cas4_TypeI-II	accessory	CAS	CDS	915209	915841	-	ID=1_862;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.684;conf=100.00;score=104.23;cscore=87.79;sscore=16.44;rscore=10.26;uscore=0.51;tscore=4.61;
+CP059589_1_863	cas7c_TypeIC	mandatory	CAS-TypeIC	CDS	915861	916727	-	ID=1_863;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.630;conf=99.99;score=190.27;cscore=168.19;sscore=22.08;rscore=14.95;uscore=1.23;tscore=4.61;
+CP059589_1_864	cas8c_TypeIC	mandatory	CAS-TypeIC	CDS	916724	918568	-	ID=1_864;partial=00;start_type=ATG;rbs_motif=3Base/5BMM;rbs_spacer=13-15bp;gc_cont=0.637;conf=99.99;score=221.56;cscore=215.66;sscore=5.90;rscore=-1.02;uscore=-1.53;tscore=4.61;
+CP059589_1_865	cas5c_TypeIC	mandatory	CAS-TypeIC	CDS	918565	919239	-	ID=1_865;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.662;conf=100.00;score=101.77;cscore=93.60;sscore=8.17;rscore=2.58;uscore=0.98;tscore=4.61;
+CP059589_1_867	cas3_TypeI	accessory	CAS	CDS	920447	922738	-	ID=1_867;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.636;conf=99.99;score=259.84;cscore=246.03;sscore=13.81;rscore=10.26;uscore=-0.41;tscore=4.61;
+####Summary system CAS-TypeIC:begin=913867;end=922738:{sequenceID=CP059589_1} : [cas2_TypeI-II-III (913867,914157,-); cas1_TypeIC (914172,915206,-); cas4_TypeI-II (915209,915841,-); cas7c_TypeIC (915861,916727,-); cas8c_TypeIC (916724,918568,-); cas5c_TypeIC (918565,919239,-); cas3_TypeI (920447,922738,-)]
+
+

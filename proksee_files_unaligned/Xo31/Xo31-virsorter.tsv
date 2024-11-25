@@ -1,0 +1,2 @@
+seqname	trim_orf_index_start	trim_orf_index_end	trim_bp_start	trim_bp_end	trim_pr	trim_pr_max	prox_orf_index_start	prox_orf_index_end	prox_bp_start	prox_bp_end	prox_pr	prox_pr_max	partial	full_orf_index_start	full_orf_index_end	full_bp_start	full_bp_end	pr_full	arc	bac	euk	vir	mix	unaligned	hallmark_cnt	group	shape	seqname_new	final_max_score	final_max_score_group
+CP011955_1	2576	2654	2978855	3054435	0.913	0.94	2576	2654	2978855	3054435	0.913	1.0	1	1	4126	43	4794116	0.367	0.0	30.8	0.0	30.8	23.1	15.4	18	dsDNAphage	linear	CP011955_1||0_partial	0.913	dsDNAphage

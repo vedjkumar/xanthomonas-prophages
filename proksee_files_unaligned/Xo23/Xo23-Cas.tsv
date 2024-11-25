@@ -1,0 +1,15 @@
+############################################
+CP036255 ( Unknown ) 
+--------------------------------------------
+### System: CAS-TypeIC (UserReplicon_CAS-TypeIC_1)
+#SequenceID	Cas-type/subtype	Gene status	System	Type	Begin	End	Strand	Other_information
+CP036255_4048	cas3_TypeI	accessory	CAS	CDS	4574911	4577202	+	ID=1_4048;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.634;conf=99.99;score=249.28;cscore=233.31;sscore=15.96;rscore=9.83;uscore=1.39;tscore=4.75;
+CP036255_4049	cas5c_TypeIC	mandatory	CAS-TypeIC	CDS	4577618	4578292	+	ID=1_4049;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.671;conf=100.00;score=102.07;cscore=95.84;sscore=6.23;rscore=2.51;uscore=-0.38;tscore=4.75;
+CP036255_4050	cas8c_TypeIC	mandatory	CAS-TypeIC	CDS	4578289	4580130	+	ID=1_4050;partial=00;start_type=ATG;rbs_motif=4Base/6BMM;rbs_spacer=13-15bp;gc_cont=0.654;conf=99.99;score=259.84;cscore=253.79;sscore=6.04;rscore=-1.40;uscore=-0.06;tscore=4.75;
+CP036255_4051	cas7c_TypeIC	mandatory	CAS-TypeIC	CDS	4580127	4580993	+	ID=1_4051;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.630;conf=99.99;score=190.80;cscore=168.05;sscore=22.74;rscore=15.03;uscore=1.67;tscore=4.75;
+CP036255_4052	cas4_TypeI-II	accessory	CAS	CDS	4581013	4581645	+	ID=1_4052;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.681;conf=100.00;score=100.98;cscore=85.16;sscore=15.82;rscore=9.83;uscore=0.17;tscore=4.75;
+CP036255_4053	cas1_TypeIC	mandatory	CAS-TypeIC	CDS	4581648	4582682	+	ID=1_4053;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.664;conf=100.00;score=160.37;cscore=142.57;sscore=17.80;rscore=9.83;uscore=1.97;tscore=4.75;
+CP036255_4054	cas2_TypeI-II-III	accessory	CAS	CDS	4582697	4582987	+	ID=1_4054;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.598;conf=99.99;score=41.89;cscore=24.98;sscore=16.91;rscore=9.83;uscore=1.21;tscore=4.75;
+####Summary system CAS-TypeIC:begin=4574911;end=4582987:{sequenceID=CP036255} : [cas3_TypeI (4574911,4577202,+); cas5c_TypeIC (4577618,4578292,+); cas8c_TypeIC (4578289,4580130,+); cas7c_TypeIC (4580127,4580993,+); cas4_TypeI-II (4581013,4581645,+); cas1_TypeIC (4581648,4582682,+); cas2_TypeI-II-III (4582697,4582987,+)]
+
+

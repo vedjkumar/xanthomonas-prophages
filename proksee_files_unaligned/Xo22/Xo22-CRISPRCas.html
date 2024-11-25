@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRISPR-Cas viewer</title>
+<link rel='stylesheet' type='text/css' href='crispr.css'>
+<style rel='stylesheet'>
+/* Based on: CRISPRCasFinder/supplementary_files/crispr.css */
+/* Altered to look better on Proksee */
+
+body {
+	color:#333;
+	background-color: #fffff0;
+	margin:20px;
+	padding:0px;
+	font-size:0.8em;
+	font-family: verdana, arial, helvetica, sans-serif;
+	}
+
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:large;
+	font-weight:700;
+	text-align:center;
+	color:#6A5ACD;
+	}
+
+h2 {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:medium;
+	margin:0px 0px 5px 0px;
+	font-weight:600;
+	padding:0px;
+	color:#6A5ACD;
+	}
+
+h3 {
+	font-family: verdana, arial, helvetica, sans-serif;
+font-size:11px;
+line-height:20px;
+}
+
+h4 {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:large;
+
+}
+
+h5{
+font-size: larger; 
+ font-family: Arial; 
+
+font-weight:bold;
+
+}
+
+.liste {
+font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+font-size: 100%;
+color: black;
+display : list-item;
+list-style-position: outside;
+list-style-image:url(_themes/blends/blebul2a.gif);
+}
+
+.title-box-title {
+  position: relative;
+  display: inline;
+  border: 1px solid;
+  border-width: 0 .1em;
+  padding: 0 .5em;
+  top: -1.1em;
+  background-color: white; 
+}
+
+.title-box-title + * {
+  margin-top: -1.1em;
+}
+
+.title-box {
+  position: relative;
+  margin: .5em;
+  border: .1em solid black;
+  padding: .5em;
+}
+
+.title-box-title {
+  position: relative;
+  display: inline;
+  border: 1px solid;
+  border-width: 0 .1em;
+  padding: 0 .5em;
+  top: -1.1em;
+  left: 1em;
+  background-color: white; 
+}
+
+pre {font-size: 1.2em;}
+	
+p {
+	font-family: verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+	}
+
+table.notable { 
+	text-align: left; 
+	margin:0;
+	border-color: #708090;
+	border-width: medium;
+	border-style: double;
+	border-collapse: collapse;
+	}	
+
+table { 
+	border: 1px solid #000000; 
+	margin:0;
+        text-align: center; 
+	}
+
+th  {	color: #000000; 
+	background: #E2E2E2 ;
+	padding: 0px; 
+	margin: 0;
+        text-align: center; 
+	}
+ 
+td {	padding-left:5px;
+	padding-right:5px;
+	margin:0;
+}
+
+table.primary_table {
+          padding: 1;
+     border-width: medium;
+     border-color: #708090;
+     border-style: double;
+ background-color: #FFFFFF; 	
+}
+
+table.primary_table TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+
+table.primary_table TBODY TR {
+}
+
+table.primary_table TBODY TR TH {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: bold;
+    	  font-size: 13px;
+              color: #FFFFFF;
+   background-color: #6A5ACD; 
+         text-align: center; 
+     vertical-align: middle;
+            padding: 4; 
+             height: 30;
+}
+
+table.primary_table TBODY TR TD {
+      border-right: #999999 1px solid;
+        border-top: #999999 1px solid;
+       border-left: #999999 1px solid;
+     border-bottom: #999999 1px solid;
+    	text-align: center;
+    vertical-align: middle;
+           padding: 3;
+}
+
+table.primary_table_no_align {
+          padding: 2;
+     border-width: medium;
+     border-color: #708090;
+     border-style: double;
+}
+
+table.primary_table_no_align TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+
+table.primary_table_no_align TBODY TR {
+}
+
+table.primary_table_no_align TBODY TR TH {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: bold;
+    	  font-size: 14px;
+              color: #FFFFFF;
+   background-color: #003366;
+            padding: 4; 
+             height: 30;
+}
+
+table.primary_table_no_align TBODY TR TD {
+      border-right: #999999 1px solid;
+        border-top: #999999 1px solid;
+       border-left: #999999 1px solid;
+     border-bottom: #999999 1px solid;
+           padding: 3;
+}
+
+table.primary_table_no_lines {
+          padding: 2;
+     border-width: medium;
+      border-color: #708090;
+     border-style: double;
+}
+
+table.primary_table_no_lines TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+
+table.primary_table_no_lines TBODY TR {
+}
+
+table.primary_table_no_lines TBODY TR TH {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 17px;
+              color: #FFFFFF;
+   background-color: #003366; 
+         text-align: center; 
+     vertical-align: middle;
+            padding: 5; 
+             height: 40;
+}
+
+table.primary_table_no_lines TBODY TR TD {
+    	text-align: center;
+    vertical-align: middle;
+           padding: 3;
+}
+
+table.primary_table_no_lines_left {
+          padding: 2;
+     border-width: medium;
+     border-color: #708090;
+     border-style: double;
+}
+
+table.primary_table_no_lines_left TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+
+table.primary_table_no_lines_left TBODY TR {
+}
+
+table.primary_table_no_lines_left TBODY TR TH {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 17px;
+              color: #FFFFFF;
+   background-color: #003366; 
+         text-align: left; 
+            padding: 5; 
+             height: 40;
+}
+table.crispr{
+     border-width: medium;
+     border-color: #708090;
+     border-style: double;
+         padding: 0px;
+	border-collapse : collapse;
+	border-spacing : 0px;
+	
+}
+
+table.primary_table_no_lines_left TBODY TR TD {
+    	text-align: justify;
+           padding: 4;
+}
+table.crisprs_table {
+          padding: 1;
+     border-width: medium;
+     border-color: #708090;
+     border-style: double;
+      empty-cells:hide;	
+}
+
+table.crisprs_table TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+
+table.crisprs_table TBODY TR {
+}
+
+table.crisprs_table TBODY TR TH {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: bold;
+    	  font-size: 13px;
+              color: #FFFFFF;
+   background-color: #6A5ACD; 
+          
+     vertical-align: middle;
+            padding: 4; 
+             height: 30;
+border-bottom: #708090 1px solid;
+}
+
+table.crisprs_table TBODY TR TD {
+//      border-right: #999999 1px solid;
+//        border-top: #999999 1px solid;
+//       border-left: #999999 1px solid;
+//     border-bottom: #999999 1px solid;
+    	text-align: left;
+    vertical-align: middle;
+           padding: 3;
+.nobordertable    { text-align: Center; 
+	border: 0px; 
+	margin:0;
+	}
+}
+
+table.crisprs_table_no_align {
+          padding: 2;
+     border-width: medium;
+     border-color: #708090;
+     border-style: double;
+}
+
+table.crisprs_table_no_align TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+
+table.crisprs_table_no_align TBODY TR {
+}
+
+table.crisprs_table_no_align TBODY TR TH {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: bold;
+    	  font-size: 14px;
+              color: #FFFFFF;
+   background-color: #003366;
+            padding: 4; 
+             height: 30;
+}
+
+table.crisprs_table_no_align TBODY TR TD {
+      border-right: #999999 1px solid;
+        border-top: #999999 1px solid;
+       border-left: #999999 1px solid;
+     border-bottom: #999999 1px solid;
+           padding: 3;
+}
+
+table.crisprs_table_no_lines {
+          padding: 2;
+     border-width: medium;
+      border-color: #708090;
+     border-style: double;
+}
+
+table.crisprs_table_no_lines TBODY {
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: normal;
+    	  font-size: 12px;
+    	      color: black;
+}
+p.code {font-family: Courier New, Courier, mono;} 
+
+
+.nobordertable    { text-align: Center; 
+	border: 0px; 
+	margin:0;
+	}
+
+.noborderlefttable { 
+        text-align: Left;
+        border: 0px;
+        margin:0;
+}
+
+div.collistleft {
+	float: left;
+	width: 0%;
+	position: relative;
+}
+div.collist {
+	float: left;
+	width: 75%;
+	position: relative;
+	padding-right:22%;
+  padding-left:0%;
+
+}
+
+div.collistright {
+	float: right;
+	width: 0%;
+	position: relative;
+
+}
+         
+.td1    { color: #000000; background: #efefff; text-align: Center; }
+.td2	{ color: #000000; background: #fcfcf9; text-align: Center; }
+.menulink {font-weight:600}
+
+.Content>p {margin:0px;}
+.Content>p+p {text-indent:30px;}
+
+a {
+	color:#09c;
+	
+	font-family:verdana, arial, helvetica, sans-serif;
+	text-decoration:none;
+	}
+a:link {color:#0F7FAF;}
+a:visited {color:#0F7FAF;}
+a:hover {background-color:#bbb;}
+  
+img.imagelink {
+  border:0
+}
+
+a.imagelink:hover {
+  background-color:transparent
+}
+
+textarea {width: 98%}
+
+/* All the content boxes belong to the content class. */
+.content {
+	position:relative; /* Position is declared "relative" to gain control of stacking order (z-index). */
+	width:auto;
+	top:0px;
+	min-width:190px;
+	/* margin:0px 190px 10px 150px;\ */
+	margin:0px 10px 10px 0px;
+	border:0px solid #999;
+ background-color:#fffff0;
+ 	/* padding:10px ;\ */
+ 	padding:0px ;
+
+
+	z-index:3; /* This allows the content to overlap the right menu in narrow windows in good browsers. */
+	}
+
+#leftmenu {
+	position:absolute;
+	width:auto;
+	min-width:140px;
+	top:20px;
+	left:10px;
+	border:0px solid #708090;
+	background-color:#E6E8FA;
+	padding:10px;
+	z-index:2;
+	voice-family: '\"}\"';
+	voice-family:inherit;
+
+	}
+		
+#rightpane {
+	position:absolute;
+	width:150px;
+	top:20px;
+	right:10px;
+	border:0px solid #708090;
+	background-color:#E6E8FA;
+	padding:10px;
+	z-index:1;
+/* Again, the ugly brilliant hack. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	}
+
+
+#contenu {
+	padding-top : 10px;
+	padding-left:5px;
+	padding-right: 5px;
+	margin-left:10px;
+}
+
+.principal {
+	position:relative; /* Position is declared "relative" to gain control of stacking order (z-index). */
+	width:auto;
+	min-width:120px;
+	margin:0px 210px 20px 170px;
+	border:1px solid #0F7FAF;
+	background-color:white;
+	padding:10px;
+	z-index:3; /* This allows the content to overlap the right menu in narrow windows in good browsers. */
+
+}
+
+.lienmenu {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+
+.menu-blue { BORDER-RIGHT: #FFFFFF 1px solid; BORDER-TOP: #FFFFFF 1px solid; PADDING-LEFT: 0px;FONT-WEIGHT: normal; BORDER-LEFT: #FFFFFF 1px solid; BORDER-BOTTOM: #FFFFFF 1px solid; font-family:Arial, Helvetica, sans-serif; font-size: 8pt; BACKGROUND-COLOR: #6A5ACD; TEXT-DECORATION: none; font-stretch : condensed; }
+td.summary{font-size: 10px;}
+
+
+
+</style>
+</head>
+<body>
+<div class = content>
+<h1> CRISPRs arrays and Cas genes found in the submitted sequence(s) </h1>
+<br/>
+<pre>
+File name           : <font COLOR= #FF0000> input/cgview.fa </font>
+File size (in bytes): 5069473
+</pre>
+<br/><br/><br/><table class= 'primary_table' width = '100%'><tr><th>Sequence: CP036254</th></tr></table>
+<br/><font COLOR= #000099> Sequence description : </font>Unknown<br/><font COLOR= #000099> Length (bp): </font>5069463<br/>
+<br/><font COLOR= #000099> AT%: </font>36.2134805994244<br/>
+<br/><font COLOR= #000099> Number of CRISPRs candidates: </font>4<br/>
+<center><table class = 'sub' width = '80%'><tr><th>CRISPRs</th></tr></table></center><br/><br/>
+<h5>Candidate number 1</h5>
+<div class = box> 
+<B> <FONT COLOR= #9900FF><a id =CP036254_1> </a> CRISPR ID : </FONT> CP036254_1 </B> <UL>
+<li><FONT COLOR= #000099>Left flanking sequence: </FONT> (100 bp [start=292780;end=292879], AT%=42): CAGGCAACTGCTCGGCGGCAGGACGACGTGTACGCATGGGCGAAAACTGCCAGAAACCAGGACGTAGCGTAACGAAAACTGGCAATTCCAGCACACCGAC </li>
+
+ <li><FONT COLOR= #000099>CRISPR start position: </FONT> 292880 ----------<FONT COLOR= #000099> CRISPR end position: </FONT> 293021 ----------<FONT COLOR= #000099> CRISPR length: </FONT> 141</li>
+<li><FONT COLOR= #000099> DR consensus: </FONT> AACGCAGGTGAAGCCTTGCAATGGATGTGGTCTGGGGGTTTTTCAGGGG </li>
+<li><FONT COLOR= #000099> DR length: </FONT> 49<FONT COLOR= #000099> Number of spacers: </FONT> 1 </li>
+<li><FONT COLOR= #000099> Consensus Repeat ID (Nb in CRISPRdb): </FONT> Unknown (0) </li>
+<li><FONT COLOR= #000099> CRISPRDirection: </FONT> ND </li>
+<li><FONT COLOR= #000099> Potential orientation (AT%): </FONT> + </li>
+<li><FONT COLOR= #000099> Conservation of DRs based on Entropy: </FONT> 97.9591836734694 </li>
+<li><FONT COLOR= #000099> Conservation of Spacers: </FONT> 100 </li>
+<li><FONT COLOR= #000099> Evidence Level: </FONT> 1 </li>
+</UL>
+<table class ='table2'  BGCOLOR=#ffffff  width=70%><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 292880 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT></span></td><td align = 'left'><span style='background:Bisque;'><FONT size=2.7 face= 'Courier New'>CGACGACGTAGCGTAACGAAAACTGGCAATTCCAGCACACCGAT </FONT></span></td><td><FONT size=2.5 color = '#000099'>292972</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 292973 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New' color='#FF0000'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT></span></td><td></td><td><FONT size=2.5 color = '#000099'> 293021 </font></td></tr></table>
+<ul><li><FONT COLOR= #000099>Right flanking sequence: </FONT> (100 bp [start=293022;end=293121], AT%=35): TGACTTTTTAGGATGTCGCGCTCCTGCGTCACCCGGCGCAACTCGGTCTTCAGCCGCCGAACCTCGGCGCTCTGGTCCACCTAGGCACGCTGCACCACGC </li></ul>
+</div><br/><br/>
+<h5>Candidate number 2</h5>
+<div class = box> 
+<B> <FONT COLOR= #9900FF><a id =CP036254_2> </a> CRISPR ID : </FONT> CP036254_2 </B> <UL>
+<li><FONT COLOR= #000099>Left flanking sequence: </FONT> (100 bp [start=344278;end=344377], AT%=45): TCGCGGGTGCTCATATTTGCAAGGCATGGAACCTGTTCGCGTTCCTGTTCGCGAAATGACGGATTTTCCCTCAAGACGCGCAAGCACTTATGCTGGCGGG </li>
+
+ <li><FONT COLOR= #000099>CRISPR start position: </FONT> 344378 ----------<FONT COLOR= #000099> CRISPR end position: </FONT> 347121 ----------<FONT COLOR= #000099> CRISPR length: </FONT> 2743</li>
+<li><FONT COLOR= #000099> DR consensus: </FONT> GTCGCGTCCTCACGGGCGCGTGGATTGAAAC </li>
+<li><FONT COLOR= #000099> DR length: </FONT> 31<FONT COLOR= #000099> Number of spacers: </FONT> 41 </li>
+<li><FONT COLOR= #000099> Consensus Repeat ID (Nb in CRISPRdb): </FONT> Unknown (0) </li>
+<li><FONT COLOR= #000099> CRISPRDirection: </FONT> ND </li>
+<li><FONT COLOR= #000099> Potential orientation (AT%): </FONT> - </li>
+<li><FONT COLOR= #000099> Conservation of DRs based on Entropy: </FONT> 100 </li>
+<li><FONT COLOR= #000099> Conservation of Spacers: </FONT> 0 </li>
+<li><FONT COLOR= #000099> Evidence Level: </FONT> 4 </li>
+</UL>
+<table class ='table2'  BGCOLOR=#ffffff  width=70%><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344378 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Blue;'><FONT size=2.7 face= 'Courier New'>GTCGCTGACCGTGGCCTACGCGGCGTGCACGTCT </FONT></span></td><td><FONT size=2.5 color = '#000099'>344442</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344443 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Blueviolet;'><FONT size=2.7 face= 'Courier New'>ACCACCACCGGATCAAGCGGCACGGTGCGCACCAGC </FONT></span></td><td><FONT size=2.5 color = '#000099'>344509</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344510 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Brown;'><FONT size=2.7 face= 'Courier New'>ATCTACGTCAAAGGGCTGTTCGACTGCAAGCAATGGTC </FONT></span></td><td><FONT size=2.5 color = '#000099'>344578</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344579 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Burlywood;'><FONT size=2.7 face= 'Courier New'>TGCGCATTGGCACTCATCATTTTCGGCATCATCG </FONT></span></td><td><FONT size=2.5 color = '#000099'>344643</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344644 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Cadetblue;'><FONT size=2.7 face= 'Courier New'>ATTTTTAAGTATCTCGACCGTTCGGCGCTTGCTAA </FONT></span></td><td><FONT size=2.5 color = '#000099'>344709</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344710 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Chartreuse;'><FONT size=2.7 face= 'Courier New'>GATTAAAGTGACCCCAACCATGGAGGCCGTCTACG </FONT></span></td><td><FONT size=2.5 color = '#000099'>344775</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344776 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Chocolate;'><FONT size=2.7 face= 'Courier New'>AATGGGCGCGAGCGATGAAGATGTATACGGCTGCC </FONT></span></td><td><FONT size=2.5 color = '#000099'>344841</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344842 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Coral;'><FONT size=2.7 face= 'Courier New'>TGGTGTGCGGTTCGGTTTGTATCACCACCAGCGC </FONT></span></td><td><FONT size=2.5 color = '#000099'>344906</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344907 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Cornflowerblue;'><FONT size=2.7 face= 'Courier New'>TAAAGATACGTAAGGCTGGCAATCAAGCTGGTAGGA </FONT></span></td><td><FONT size=2.5 color = '#000099'>344973</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 344974 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Crimson;'><FONT size=2.7 face= 'Courier New'>ACGTGACCAGCATCAATCCACGGACCCAGTAAGGC </FONT></span></td><td><FONT size=2.5 color = '#000099'>345039</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345040 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Cyan;'><FONT size=2.7 face= 'Courier New'>TTTATTTCAGCCTTGAGATGACGACAACGGAGCTG </FONT></span></td><td><FONT size=2.5 color = '#000099'>345105</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345106 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkcyan;'><FONT size=2.7 face= 'Courier New'>AGTGACGGCCAAGTAATCGTCGCTGACGAACAGC </FONT></span></td><td><FONT size=2.5 color = '#000099'>345170</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345171 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkgoldenrod;'><FONT size=2.7 face= 'Courier New'>ATCATAGACGCTGCGAGCAAGGACGGCGGTAGCG </FONT></span></td><td><FONT size=2.5 color = '#000099'>345235</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345236 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkgray;'><FONT size=2.7 face= 'Courier New'>GGTCCTAAAGCTATTTGGACGACACCGGATCAGT </FONT></span></td><td><FONT size=2.5 color = '#000099'>345300</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345301 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkgreen;'><FONT size=2.7 face= 'Courier New'>GGCGCAGCAAACTCTGCCAACTGCGCAAGACGC </FONT></span></td><td><FONT size=2.5 color = '#000099'>345364</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345365 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkkhaki;'><FONT size=2.7 face= 'Courier New'>ATCGAGCTATCATGCCCATCCTGCGGCCTAGATGG </FONT></span></td><td><FONT size=2.5 color = '#000099'>345430</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345431 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkmagenta;'><FONT size=2.7 face= 'Courier New'>AGCGGCACGGCGTGCAGCAAGGGCGTCATCAGCCT </FONT></span></td><td><FONT size=2.5 color = '#000099'>345496</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345497 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkolivegreen;'><FONT size=2.7 face= 'Courier New'>ATAGAGGCATGGCTGCTGCGCACGCGCTCATCTC </FONT></span></td><td><FONT size=2.5 color = '#000099'>345561</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345562 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkorange;'><FONT size=2.7 face= 'Courier New'>CCCCGTCAAGCTCTCCATTTGGCAAGAGCGCCACC </FONT></span></td><td><FONT size=2.5 color = '#000099'>345627</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345628 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkorchid;'><FONT size=2.7 face= 'Courier New'>ACGCGTCGCATCGCGTGGCGGAATATTCACGATC </FONT></span></td><td><FONT size=2.5 color = '#000099'>345692</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345693 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkred;'><FONT size=2.7 face= 'Courier New'>TGCTAGAGCCACACACTCTGCATTAAGGCAAGAAT </FONT></span></td><td><FONT size=2.5 color = '#000099'>345758</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345759 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darksalmon;'><FONT size=2.7 face= 'Courier New'>TGCACTGTTGGTGCAATTTCCCGTGTACAGGGGTT </FONT></span></td><td><FONT size=2.5 color = '#000099'>345824</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345825 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkseagreen;'><FONT size=2.7 face= 'Courier New'>ATGACCACCATGCGCCCGATGCGCAAGCTCTCGG </FONT></span></td><td><FONT size=2.5 color = '#000099'>345889</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345890 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Darkslategray;'><FONT size=2.7 face= 'Courier New'>CCATTATGTCAATAATGGGAATTGGTCTAGCTAT </FONT></span></td><td><FONT size=2.5 color = '#000099'>345954</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 345955 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:deeppink;'><FONT size=2.7 face= 'Courier New'>TTGTCACCGGGATATCCACCTCTGCCTTGACCT </FONT></span></td><td><FONT size=2.5 color = '#000099'>346018</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346019 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Deepskyblue;'><FONT size=2.7 face= 'Courier New'>TCTCCGCAGCCTGGATGGCCGCTCTAGGGTTGCCA </FONT></span></td><td><FONT size=2.5 color = '#000099'>346084</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346085 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Moccasin;'><FONT size=2.7 face= 'Courier New'>CCCCCAAAGACATATCAAAGTCGCATTGCCTATTAT </FONT></span></td><td><FONT size=2.5 color = '#000099'>346151</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346152 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Dodgerblue;'><FONT size=2.7 face= 'Courier New'>TTGCCATCGGCTTTGAGAATGCCGGCATCCAGCC </FONT></span></td><td><FONT size=2.5 color = '#000099'>346216</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346217 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Firebrick;'><FONT size=2.7 face= 'Courier New'>AATGGTTTGACGGCAGCGACCGGGTCCCATCGTC </FONT></span></td><td><FONT size=2.5 color = '#000099'>346281</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346282 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Lemonchiffon;'><FONT size=2.7 face= 'Courier New'>GTCTGATGGCACACGCACCTGAGTTATTTGCAAGCG </FONT></span></td><td><FONT size=2.5 color = '#000099'>346348</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346349 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Forestgreen;'><FONT size=2.7 face= 'Courier New'>AGCGCCGAGAGCAACGCTCCCGCCGCCGGCAGGGG </FONT></span></td><td><FONT size=2.5 color = '#000099'>346414</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346415 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Fuchsia;'><FONT size=2.7 face= 'Courier New'>AAGAGCTAAGAGTAAACGGGCTAAGAGTAAACGGGCTTCTTCCGGCGAACA </FONT></span></td><td><FONT size=2.5 color = '#000099'>346496</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346497 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Gainsboro;'><FONT size=2.7 face= 'Courier New'>GCGTCGACGTCCACATCAATCACGAAGAGTGCCGG </FONT></span></td><td><FONT size=2.5 color = '#000099'>346562</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346563 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Gold;'><FONT size=2.7 face= 'Courier New'>ATGTATATGACAGCGTTCCGGTCGATGCTAGCGGC </FONT></span></td><td><FONT size=2.5 color = '#000099'>346628</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346629 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Goldenrod;'><FONT size=2.7 face= 'Courier New'>CCGGACTTCCAGGCACGCCTGCGCGATGCGATCG </FONT></span></td><td><FONT size=2.5 color = '#000099'>346693</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346694 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Gray;'><FONT size=2.7 face= 'Courier New'>TGGCGATGGATGAAGATGGGTCTTGGTGGTGGCAC </FONT></span></td><td><FONT size=2.5 color = '#000099'>346759</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346760 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Green;'><FONT size=2.7 face= 'Courier New'>CTTGCCGGTGCGTGCGTCCTTGAATGTGCCGGTCGG </FONT></span></td><td><FONT size=2.5 color = '#000099'>346826</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346827 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Lightgoldenrodyellow;'><FONT size=2.7 face= 'Courier New'>ATCCTGCGTTTGCTCGGTGCGATTCGGCTCGAAG </FONT></span></td><td><FONT size=2.5 color = '#000099'>346891</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346892 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Greenyellow;'><FONT size=2.7 face= 'Courier New'>CCACATTCGGCGACCTAGGCCGCCACACATCTCGA </FONT></span></td><td><FONT size=2.5 color = '#000099'>346957</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 346958 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Hotpink;'><FONT size=2.7 face= 'Courier New'>TTGTGCATGAATTGCGGACTCCCGTCCCGCTGTGTA </FONT></span></td><td><FONT size=2.5 color = '#000099'>347024</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 347025 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td align = 'left'><span style='background:Indianred;'><FONT size=2.7 face= 'Courier New'>TCTCTGCGTGCGGTTAATACTTCCGGTAGGCTGTC </FONT></span></td><td><FONT size=2.5 color = '#000099'>347090</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 347091 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT></span></td><td></td><td><FONT size=2.5 color = '#000099'> 347121 </font></td></tr></table>
+<ul><li><FONT COLOR= #000099>Right flanking sequence: </FONT> (100 bp [start=347122;end=347221], AT%=52): CGTAAATACGGAGTGCGGGCTCATAATCATCTAGGTCATGTTAACACATCCGAAGCCCATCAACGGTGAGCACAAAGCTGAGGAATCCAAGGAACATGAC </li></ul>
+</div><br/><br/>
+<h5>Candidate number 3</h5>
+<div class = box> 
+<B> <FONT COLOR= #9900FF><a id =CP036254_3> </a> CRISPR ID : </FONT> CP036254_3 </B> <UL>
+<li><FONT COLOR= #000099>Left flanking sequence: </FONT> (100 bp [start=1836442;end=1836541], AT%=41): GGATCGCCTTTTTGCGTGCCTGGTTGCAGGTGGTGCGGGCGCGTTCCTCAACGCACTCAAGCACCATGTGGCCCGCAAATATGGCACTGGAGGTTTGAGA </li>
+
+ <li><FONT COLOR= #000099>CRISPR start position: </FONT> 1836542 ----------<FONT COLOR= #000099> CRISPR end position: </FONT> 1836640 ----------<FONT COLOR= #000099> CRISPR length: </FONT> 98</li>
+<li><FONT COLOR= #000099> DR consensus: </FONT> GGGGTTTTTCAGGGGCGACTACT </li>
+<li><FONT COLOR= #000099> DR length: </FONT> 23<FONT COLOR= #000099> Number of spacers: </FONT> 1 </li>
+<li><FONT COLOR= #000099> Consensus Repeat ID (Nb in CRISPRdb): </FONT> Unknown (0) </li>
+<li><FONT COLOR= #000099> CRISPRDirection: </FONT> ND </li>
+<li><FONT COLOR= #000099> Potential orientation (AT%): </FONT> - </li>
+<li><FONT COLOR= #000099> Conservation of DRs based on Entropy: </FONT> 91.304347826087 </li>
+<li><FONT COLOR= #000099> Conservation of Spacers: </FONT> 100 </li>
+<li><FONT COLOR= #000099> Evidence Level: </FONT> 1 </li>
+</UL>
+<table class ='table2'  BGCOLOR=#ffffff  width=70%><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 1836542 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT></span></td><td align = 'left'><span style='background:Indigo;'><FONT size=2.7 face= 'Courier New'>CAGGATGGGGGGACGTCGCAACGCAGATGAAGTCTTGAGATGGATGTGGTCTG </FONT></span></td><td><FONT size=2.5 color = '#000099'>1836617</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 1836618 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New' color='#FF0000'><b>G</b></FONT><FONT size=2.7 face='Courier New' color='#FF0000'><b>C</b></FONT></span></td><td></td><td><FONT size=2.5 color = '#000099'> 1836640 </font></td></tr></table>
+<ul><li><FONT COLOR= #000099>Right flanking sequence: </FONT> (100 bp [start=1836641;end=1836740], AT%=53): TACGTTCAAATCCTCTGAGCAAATCCCAATCGGTGACATGCCTATCATATTCGGACTGTTCCCATTGCGCAGCATGGACGTAATGTTCGACAACCTCACT </li></ul>
+</div><br/><br/>
+<h5>Candidate number 4</h5>
+<div class = box> 
+<B> <FONT COLOR= #9900FF><a id =CP036254_4> </a> CRISPR ID : </FONT> CP036254_4 </B> <UL>
+<li><FONT COLOR= #000099>Left flanking sequence: </FONT> (100 bp [start=2827097;end=2827196], AT%=37): CGCTGGATCGCATGTTTGCGTGCCTGGTTGCGGGTGACGCGGGCGCGCCCCTCAACGGGCTCAAGCATCATGTGGCCGGCAAACATGGCATTTGGTGCTT </li>
+
+ <li><FONT COLOR= #000099>CRISPR start position: </FONT> 2827197 ----------<FONT COLOR= #000099> CRISPR end position: </FONT> 2827276 ----------<FONT COLOR= #000099> CRISPR length: </FONT> 79</li>
+<li><FONT COLOR= #000099> DR consensus: </FONT> GAGAGGGTTTTTCAGGGGCGACTA </li>
+<li><FONT COLOR= #000099> DR length: </FONT> 24<FONT COLOR= #000099> Number of spacers: </FONT> 1 </li>
+<li><FONT COLOR= #000099> Consensus Repeat ID (Nb in CRISPRdb): </FONT> Unknown (0) </li>
+<li><FONT COLOR= #000099> CRISPRDirection: </FONT> ND </li>
+<li><FONT COLOR= #000099> Potential orientation (AT%): </FONT> - </li>
+<li><FONT COLOR= #000099> Conservation of DRs based on Entropy: </FONT> 95.8333333333333 </li>
+<li><FONT COLOR= #000099> Conservation of Spacers: </FONT> 100 </li>
+<li><FONT COLOR= #000099> Evidence Level: </FONT> 1 </li>
+</UL>
+<table class ='table2'  BGCOLOR=#ffffff  width=70%><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 2827197 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT></span></td><td align = 'left'><span style='background:Mediumblue;'><FONT size=2.7 face= 'Courier New'>TGTGGCCCGCAAACATGGCACTGGAGGTTTGA </FONT></span></td><td><FONT size=2.5 color = '#000099'>2827252</font></td></tr><tr> <td align = 'left'> <FONT size=2.5 color='#000099'> 2827253 </font></td><td align = 'left'><span style='background:Yellow;'><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New' color='#FF0000'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>G</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT><FONT size=2.7 face='Courier New'><b>C</b></FONT><FONT size=2.7 face='Courier New'><b>T</b></FONT><FONT size=2.7 face='Courier New'><b>A</b></FONT></span></td><td></td><td><FONT size=2.5 color = '#000099'> 2827276 </font></td></tr></table>
+<ul><li><FONT COLOR= #000099>Right flanking sequence: </FONT> (100 bp [start=2827277;end=2827376], AT%=43): CTTCGACTTCTCGGCAAACGCGCGCATTCTTGCGAGTCTCGGCCGCTTCGTTTGCGTTCCAAAAGTATTGCGCATCGAAGCACCACGAAGGCGCTCCCTT </li></ul>
+</div><br/><br/>
+<center><table class = 'sub' width = '80%'><tr><th>Cas system(s) and genes</th></tr></table></center><br/><br/>
+<div class = box> 
+<ul><li><FONT COLOR= #000099>System number 1: </FONT>  CAS-TypeIC:begin=336117;end=344190:{sequenceID=CP036254} : [cas3_TypeI (336117,338408,+); cas5c_TypeIC (338821,339495,+); cas8c_TypeIC (339492,341333,+); cas7c_TypeIC (341330,342196,+); cas4_TypeI-II (342216,342848,+); cas1_TypeIC (342851,343885,+); cas2_TypeI-II-III (343900,344190,+)] </li></ul>
+</div><br/><br/></div></body></html>

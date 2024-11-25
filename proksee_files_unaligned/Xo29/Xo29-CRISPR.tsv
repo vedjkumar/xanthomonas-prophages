@@ -1,0 +1,6 @@
+Strain	Sequence	Sequence_basename	Duplicated_Spacers	CRISPR_Id	CRISPR_Start	CRISPR_End	CRISPR_Length	Potential_Orientation (AT%)	CRISPRDirection	Consensus_Repeat	Repeat_ID (CRISPRdb)	Nb_CRISPRs_with_same_Repeat (CRISPRdb)	Repeat_Length	Spacers_Nb	Mean_size_Spacers	Standard_Deviation_Spacers	Nb_Repeats_matching_Consensus	Ratio_Repeats_match/TotalRepeat	Conservation_Repeats (% identity)	EBcons_Repeats	Conservation_Spacers (% identity)	EBcons_Spacers	Repeat_Length_plus_mean_size_Spacers	Ratio_Repeat/mean_Spacers_Length	CRISPR_found_in_DB (if sequence IDs are similar)	Evidence_Level
+Unknown	CP011958_1	CP011958_1	0	CP011958_1_1	531851	532005	154	Forward	Unknown	CCCATGCACTTGGTAACGTGGTTGCCTGACATGACCAAGCAGTGAAATCGCAGAT	Unknown	0	55	1	45	0	2	1	100	100	100	100	100	1.22222222222222	0	1
+Unknown	CP011958_1	CP011958_1	0	CP011958_1_2	1639670	1639781	111	Forward	Unknown	TAATGAAAACTGGCAGTTCCAGCACGCC	Unknown	0	28	1	56	0	2	1	100	100	100	100	84	0.5	0	1
+Unknown	CP011958_1	CP011958_1	0	CP011958_1_3	2328335	2328499	164	Forward	Unknown	TGCCGGAGCAGCAACCGGTGCCGG	Unknown	0	24	3	23	7.54983443527075	1	0.25	50	59.4360937770434	18.1818181818182	40.5726388517384	47	1.04347826086957	0	1
+Unknown	CP011958_1	CP011958_1	0	CP011958_1_4	3273952	3274065	113	Forward	Unknown	CGGTCTGGGGGTTTTTCAGGGGCGACTAAT	Unknown	0	30	1	54	0	2	1	100	100	100	100	84	0.555555555555556	0	1
+

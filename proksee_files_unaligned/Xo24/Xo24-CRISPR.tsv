@@ -1,0 +1,4 @@
+Strain	Sequence	Sequence_basename	Duplicated_Spacers	CRISPR_Id	CRISPR_Start	CRISPR_End	CRISPR_Length	Potential_Orientation (AT%)	CRISPRDirection	Consensus_Repeat	Repeat_ID (CRISPRdb)	Nb_CRISPRs_with_same_Repeat (CRISPRdb)	Repeat_Length	Spacers_Nb	Mean_size_Spacers	Standard_Deviation_Spacers	Nb_Repeats_matching_Consensus	Ratio_Repeats_match/TotalRepeat	Conservation_Repeats (% identity)	EBcons_Repeats	Conservation_Spacers (% identity)	EBcons_Spacers	Repeat_Length_plus_mean_size_Spacers	Ratio_Repeat/mean_Spacers_Length	CRISPR_found_in_DB (if sequence IDs are similar)	Evidence_Level
+Unknown	CP036256	CP036256	0	CP036256_1	1241281	1241353	72	Reverse	Unknown	GCTGAAGGTCAGGGCTAATCAGGT	Unknown	0	24	1	25	0	1	0.5	95.8333333333333	95.8333333333333	100	100	49	0.96	0	1
+Unknown	CP036256	CP036256	0	CP036256_2	1635333	1635425	92	Reverse	Unknown	CGTGTGCAGCTACGCCAGATCCAGCCTGGCAAG	Unknown	0	33	1	27	0	1	0.5	96.969696969697	96.969696969697	100	100	60	1.22222222222222	0	1
+

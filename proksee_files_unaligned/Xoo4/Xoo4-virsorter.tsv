@@ -1,0 +1,2 @@
+seqname	trim_orf_index_start	trim_orf_index_end	trim_bp_start	trim_bp_end	trim_pr	trim_pr_max	prox_orf_index_start	prox_orf_index_end	prox_bp_start	prox_bp_end	prox_pr	prox_pr_max	partial	full_orf_index_start	full_orf_index_end	full_bp_start	full_bp_end	pr_full	arc	bac	euk	vir	mix	unaligned	hallmark_cnt	group	shape	seqname_new	final_max_score	final_max_score_group
+CP101719_1	1536	1632	1674362	1753840	0.92	0.967	1536	1639	1674362	1761164	0.9	1.0	1	1	4145	1	4725553	0.38	0.0	25.9	0.0	32.8	11.2	30.2	9	dsDNAphage	linear	CP101719_1||0_partial	0.92	dsDNAphage

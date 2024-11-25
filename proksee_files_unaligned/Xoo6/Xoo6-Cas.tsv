@@ -1,0 +1,15 @@
+############################################
+CP118871_1 ( Unknown ) 
+--------------------------------------------
+### System: CAS-TypeIC (UserReplicon_CAS-TypeIC_1)
+#SequenceID	Cas-type/subtype	Gene status	System	Type	Begin	End	Strand	Other_information
+CP118871_1_3502	cas2_TypeI-II-III	accessory	CAS	CDS	3671379	3671669	-	ID=1_3502;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.601;conf=99.98;score=37.08;cscore=20.94;sscore=16.14;rscore=10.25;uscore=0.17;tscore=4.60;
+CP118871_1_3503	cas1_TypeIC	mandatory	CAS-TypeIC	CDS	3671684	3672718	-	ID=1_3503;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.665;conf=100.00;score=165.27;cscore=148.22;sscore=17.05;rscore=10.25;uscore=0.95;tscore=4.60;
+CP118871_1_3504	cas4_TypeI-II	accessory	CAS	CDS	3672721	3673353	-	ID=1_3504;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.684;conf=100.00;score=104.41;cscore=87.92;sscore=16.49;rscore=10.25;uscore=0.57;tscore=4.60;
+CP118871_1_3505	cas7c_TypeIC	mandatory	CAS-TypeIC	CDS	3673373	3674239	-	ID=1_3505;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.630;conf=99.99;score=190.25;cscore=168.32;sscore=21.93;rscore=15.06;uscore=0.97;tscore=4.60;
+CP118871_1_3506	cas8c_TypeIC	mandatory	CAS-TypeIC	CDS	3674236	3676080	-	ID=1_3506;partial=00;start_type=ATG;rbs_motif=4Base/6BMM;rbs_spacer=13-15bp;gc_cont=0.637;conf=99.99;score=221.89;cscore=216.00;sscore=5.89;rscore=-1.35;uscore=-1.42;tscore=4.60;
+CP118871_1_3507	cas5c_TypeIC	mandatory	CAS-TypeIC	CDS	3676077	3676751	-	ID=1_3507;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.662;conf=100.00;score=102.46;cscore=94.08;sscore=8.38;rscore=2.54;uscore=1.25;tscore=4.60;
+CP118871_1_3508	cas3_TypeI	accessory	CAS	CDS	3676879	3679170	-	ID=1_3508;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.636;conf=99.99;score=259.63;cscore=245.68;sscore=13.95;rscore=10.25;uscore=-0.24;tscore=4.60;
+####Summary system CAS-TypeIC:begin=3671379;end=3679170:{sequenceID=CP118871_1} : [cas2_TypeI-II-III (3671379,3671669,-); cas1_TypeIC (3671684,3672718,-); cas4_TypeI-II (3672721,3673353,-); cas7c_TypeIC (3673373,3674239,-); cas8c_TypeIC (3674236,3676080,-); cas5c_TypeIC (3676077,3676751,-); cas3_TypeI (3676879,3679170,-)]
+
+

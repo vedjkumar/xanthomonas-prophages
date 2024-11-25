@@ -1,5 +1,0 @@
-Strain	Sequence	Sequence_basename	Duplicated_Spacers	CRISPR_Id	CRISPR_Start	CRISPR_End	CRISPR_Length	Potential_Orientation (AT%)	CRISPRDirection	Consensus_Repeat	Repeat_ID (CRISPRdb)	Nb_CRISPRs_with_same_Repeat (CRISPRdb)	Repeat_Length	Spacers_Nb	Mean_size_Spacers	Standard_Deviation_Spacers	Nb_Repeats_matching_Consensus	Ratio_Repeats_match/TotalRepeat	Conservation_Repeats (% identity)	EBcons_Repeats	Conservation_Spacers (% identity)	EBcons_Spacers	Repeat_Length_plus_mean_size_Spacers	Ratio_Repeat/mean_Spacers_Length	CRISPR_found_in_DB (if sequence IDs are similar)	Evidence_Level
-Unknown	CP061375_1	CP061375_1	0	CP061375_1_1	225323	225434	111	Unknown	Unknown	CTGTGCCAGGACCATGGCCTGACCCCGG	Unknown	0	28	1	56	0	1	0.5	96.4285714285714	96.4285714285714	100	100	84	0.5	0	1
-Unknown	CP061375_1	CP061375_1	0	CP061375_1_2	2318742	2321462	2720	Reverse	Unknown	GTCGCGTCCTCACGGGCGCGTGGATTGAAAC	Unknown	0	31	41	34.609756097561	0.996946557757431	42	1	100	100	0	0	65.609756097561	0.895701198026779	0	4
-Unknown	CP061375_1	CP061375_1	0	CP061375_1_3	2986095	2986201	106	Forward	Unknown	GTGTCTGTCGTCCCTGCTTGGCGCAGGAAGCGATAC	Unknown	0	36	1	35	0	2	1	100	100	100	100	71	1.02857142857143	0	1
-

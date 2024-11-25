@@ -1,0 +1,2 @@
+Sequence(s)	CRISPR array(s)	Nb CRISPRs	Evidence-levels	Cas cluster(s)	Nb Cas	Cas Types/Subtypes
+CP033188	CP033188_1[869867;875420] (evidence-level=4), CP033188_2[4091008;4091180] (evidence-level=1),	2	Nb_arrays_evidence-level_1=1,Nb_arrays_evidence-level_2=0,Nb_arrays_evidence-level_3=0,Nb_arrays_evidence-level_4=1	CAS-TypeIC[875608;883399],	1	CAS-TypeIC (n=1), 
